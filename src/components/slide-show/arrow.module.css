@@ -1,0 +1,50 @@
+.left,
+.right {
+  display: flex;
+  position: absolute;
+  cursor: pointer;
+  transition: background-color 250ms ease-in;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0rem 0.063rem 0.313rem #000000;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border: 0.063rem solid transparent;
+  z-index: 0;
+}
+.left {
+  left: 1.563rem;
+}
+
+.right {
+  right: 1.563rem;
+}
+
+.left:active,
+.right:active {
+  transform: scale(1.1);
+}
+
+.left:hover,
+.right:hover {
+  background: rgba(161, 173, 209, 0.7);
+  transition: background-color 250ms ease-in;
+}
+
+@media screen and (min-width: 0rem) {
+  .left,
+  .right {
+    border-radius: 2rem 2rem 2rem 2rem;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media screen and (min-width: 37.563rem) {
+  .left,
+  .right {
+    border-radius: 3rem 3rem 3rem 3rem;
+    height: 3rem;
+    width: 3rem;
+  }
+}

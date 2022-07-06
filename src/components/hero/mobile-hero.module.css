@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*Hero element size renders as screen size minus navbar height*/
+  height: calc(100vh - 3.5rem);
+}
+.headingWrap,
+.subHeading,
+.buttonWrap {
+  background-color: #000;
+}
+
+.headingWrap {
+  padding: 1em;
+}
+
+.yellowText {
+  color: #ffcc00;
+}
+
+.subHeading {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+  padding: 1em;
+}
+
+.buttonWrap {
+  padding: 1em;
+}

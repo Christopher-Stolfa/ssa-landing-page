@@ -1,0 +1,25 @@
+.iconWrapper {
+  text-indent: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #fecd08;
+}
+
+.container {
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.container:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.container:active {
+  transform: scale(1.2, 1.2);
+}

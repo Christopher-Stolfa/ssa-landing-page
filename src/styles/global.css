@@ -1,0 +1,48 @@
+/* 
+Global css
+*/
+
+html,
+body {
+  position: relative;
+  min-height: 100%;
+  top: 0px;
+  margin: 0;
+  font-family: adelle-sans, 'roboto', 'Helvetica Neue', sans-serif;
+  position: relative;
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+li {
+  display: list-item;
+  text-align: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
