@@ -17,11 +17,7 @@ const Arrow = ({ direction = 'left', handleClick = () => {} }) => {
       onClick={handleClick}
     >
       <Img
-        src={
-          direction === 'left'
-            ? `${process.env.PUBLIC_URL}/images/left-arrow.svg`
-            : `${process.env.PUBLIC_URL}/images/right-arrow.svg`
-        }
+        src={direction === 'left' ? '/images/left-arrow.svg' : '/images/right-arrow.svg'}
         alt="SlideShow arrow button"
         style={{ width: device === 'mobile' ? 9 : 18, height: device === 'mobile' ? 15 : 30 }}
       />
