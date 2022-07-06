@@ -25,7 +25,7 @@
 <h3 align="center">The Bernard and Anne Spitzer School of Architecture</h3>
 
   <p align="center">
-    Spitzer School of Architecture website. Built in JSX & CSS using the Next.js React framework.
+    Spitzer School of Architecture landing page.
   </p>
 </div>
 
@@ -47,11 +47,12 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
+
   </ol>
 </details>
 
@@ -69,7 +70,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 ### Built With
 
-- [Next.js](https://nextjs.org/)
 - [React.js](https://reactjs.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -113,19 +113,13 @@ First make sure you have the latest versions of
 6. To run this application on a local server with hot reload, open a command line and run:
 
    ```
-   yarn dev
+   yarn start
    ```
 
 7. To create an optimized build of the application, open a command line and run:
 
    ```
    yarn build
-   ```
-
-8. To serve the optimized build of the application, first make sure you have a made build folder using 'yarn build'. Open a command line and run:
-
-   ```
-   yarn start
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -137,41 +131,6 @@ First make sure you have the latest versions of
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-<!-- ROADMAP -->
-
-## Roadmap
-
-- [x] Website Layout
-
-  - [x] Small & large window responsive (mobile & desktop)
-  - [ ] Medium window responsive? (on the backlog)
-
-  - [x] Mobile Header
-
-    - [x] Styled like the original header
-    - [ ] Working menu
-
-  - [x] Mobile Footer
-
-    - [x] Styled like the original footer
-    - [ ] Social media navigation
-
-  - [ ] Mobile Articles
-
-  - [x] Desktop header
-
-    - [x] Styled like the original header
-    - [ ] Working menu
-    - [ ] Background slideshow
-
-  - [x] Desktop Footer
-
-    - [x] Styled like the original footer
-    - [x] Social media navigation
-
-  - [ ] Desktop Articles
-    - [ ] Content area
 
 See the [open issues](https://github.com/github_username/Christopher-Stolfa/Spitzer-Project) for a full list of proposed features (and known issues).
 
