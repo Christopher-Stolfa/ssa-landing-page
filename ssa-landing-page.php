@@ -20,7 +20,7 @@ function ssa_landing_page_init()
     wp_register_style("ssa_landing_page_css", plugins_url($path . "/css/main.css", __FILE__), array(), "1.0", "all");
 }
 
-add_action('init', 'my_react_app_init');
+add_action('init', 'ssa_landing_page_init');
 
 // Function for the short code that call React app
 function ssa_landing_page()
