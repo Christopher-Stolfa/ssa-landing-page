@@ -2,7 +2,7 @@
   "name": "landing-page",
   "version": "0.1.0",
   "private": true,
-  "homepage": "/app/plugins/ssa-landing-page/frontend/build/",
+  "homepage": "/wp-content/plugins/ssa-landing-page/frontend/build/",
   "dependencies": {
     "@craco/craco": "^6.4.5",
     "classnames": "^2.3.1",
