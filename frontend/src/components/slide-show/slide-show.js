@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import Arrow from './arrow';
 import styles from './slide-show.module.css';
 import Pagination from './pagination';

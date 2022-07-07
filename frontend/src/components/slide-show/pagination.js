@@ -10,7 +10,7 @@ import { BsCircle, BsCircleFill } from 'react-icons/bs';
  */
 const Pagination = ({ current = 0, slides = [], selectSlide = () => {} }) => (
   <ul id="paginationCircleList" aria-label="slide show pagination" className={styles.container}>
-    {slides.map(({}, i) => (
+    {slides.map((slide, i) => (
       <li key={`paginationCircle${i}`}>
         <button
           id={`paginationCircle${i}`}

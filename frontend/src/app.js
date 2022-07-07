@@ -1,3 +1,4 @@
+import React from 'react';
 import './styles/global.css';
 import { ThemeProvider } from './context/ThemeContext';
 import LandingPage from './pages/landing-page';

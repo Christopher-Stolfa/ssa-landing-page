@@ -5,7 +5,7 @@ import { ThemeContext } from '../context/ThemeContext';
  * Handles theme functionality and passes state of the Provider to the Consumer
  */
 const useTheme = () => {
-  const [state, setState] = useContext(ThemeContext);
+  const [state] = useContext(ThemeContext);
 
   const deviceTypes = {
     mobile: 'mobile',
