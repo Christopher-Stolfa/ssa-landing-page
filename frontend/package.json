@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "PUBLIC_URL=/wp-content/plugins/ssa-landing-page/frontend/build/ craco build",
+    "build": "PUBLIC_URL=/wp-content/reactpress/apps/routertest/build react-scripts build",
     "build-rewire": "node build-non-split.js",
     "test": "react-scripts test",
     "lint": "eslint .",
