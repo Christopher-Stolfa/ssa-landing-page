@@ -35,16 +35,23 @@ const socialMedia = [
   { title: 'twitter', link: 'https://twitter.com/citycollegeny', icon: 'FaTwitter' },
 ];
 
+/**
+ * Slide Show image data
+ */
 const imageData = [
   {
-    width: 1440,
-    height: 961,
-    src: '/slideshow-images/fav-bySirinSamman-0256.jpg',
-    alt: 'Photo of SSA college campus',
+    src: '/wp-content/uploads/2022/07/fav-bySirinSamman-0256.jpg',
+    alt: 'SSA students working on projects. Photo taken by Sirin Samman.',
   },
-  { width: 1440, height: 1440, src: '/slideshow-images/image_19.jpg', alt: 'Photo of SSA college campus' },
-  { width: 1440, height: 960, src: '/slideshow-images/fav-bySirinSamman-0074.jpg', alt: 'Photo of SSA college campus' },
-  { width: 1440, height: 908, src: '/slideshow-images/fav-bySirinSamman-0230.jpg', alt: 'Photo of SSA college campus' },
+  { src: '/wp-content/uploads/2022/07/image_19.jpg', alt: 'ssa campus image' },
+  {
+    src: '/wp-content/uploads/2022/07/fav-bySirinSamman-0074.jpg',
+    alt: 'SSA student presentations. Photo taken by Sirin Samman.',
+  },
+  {
+    src: '/wp-content/uploads/2022/07/fav-bySirinSamman-0230.jpg',
+    alt: 'SSA students having a discussion with a professor. Photo taken by Sirin Samman.',
+  },
 ];
 
 export { welcomeLink, subscribeLink, socialMedia, imageData };
