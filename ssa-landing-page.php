@@ -12,12 +12,12 @@
 // First register resources with init
 function ssa_landing_page_init()
 {
-    $path = "/frontend/build/static";
+    $path = "/frontend/build";
     // if (getenv('WP_ENV') == "development") {
     //     $path = "/frontend/build/static";
     // }
-    wp_register_script("ssa_landing_page_js", plugins_url($path . "/js/main.js", __FILE__), array(), "1.0", false);
-    wp_register_style("ssa_landing_page_css", plugins_url($path . "/css/main.css", __FILE__), array(), "1.0", "all");
+    wp_register_script("ssa_landing_page_js", plugins_url($path . "static/js/main.js", __FILE__), array(), "1.0", false);
+    wp_register_style("ssa_landing_page_css", plugins_url($path . "static/css/main.css", __FILE__), array(), "1.0", "all");
 }
 
 add_action('init', 'ssa_landing_page_init');
