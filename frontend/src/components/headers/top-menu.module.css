@@ -1,0 +1,23 @@
+.nav {
+  height: 36px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.logoWrapper {
+  position: absolute;
+  text-align: center;
+  margin-left: 1em;
+  margin-top: 7px;
+}

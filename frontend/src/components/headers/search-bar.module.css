@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+}
+
+.input {
+  outline-width: 0;
+  width: 217px;
+  height: 32px;
+}
+
+.searchButton {
+  border-color: #000000;
+  background-color: #000000;
+  background-image: none;
+  margin-left: 12px;
+  margin-right: 12px;
+  filter: none;
+  width: 71px;
+  height: 32px;
+  border: 0;
+}
