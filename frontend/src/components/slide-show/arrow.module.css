@@ -34,7 +34,7 @@
 @media screen and (min-width: 0rem) {
   .left,
   .right {
-    border-radius: 2rem 2rem 2rem 2rem;
+    border-radius: 50%;
     height: 2rem;
     width: 2rem;
   }
@@ -43,7 +43,7 @@
 @media screen and (min-width: 37.563rem) {
   .left,
   .right {
-    border-radius: 3rem 3rem 3rem 3rem;
+    border-radius: 50%;
     height: 3rem;
     width: 3rem;
   }

@@ -1,6 +1,8 @@
 import styles from './arrow.module.css';
 import useTheme from '../../hooks/useTheme';
-import Img from 'react-cool-img';
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
+import { IconContext } from 'react-icons';
+
 /**
  * Arrow buttons for the SlideShow component
  * @param {*} props
@@ -16,11 +18,9 @@ const Arrow = ({ direction = 'left', handleClick = () => {} }) => {
       className={styles[direction]}
       onClick={handleClick}
     >
-      <Img
-        src={direction === 'left' ? '/images/left-arrow.svg' : '/images/right-arrow.svg'}
-        alt="SlideShow arrow button"
-        style={{ width: device === 'mobile' ? 9 : 18, height: device === 'mobile' ? 15 : 30 }}
-      />
+      <IconContext.Provider value={{ style: { height: '100%', width: '100%' } }}>
+        {direction === 'left' ? <MdKeyboardArrowLeft /> : <MdKeyboardArrowRight />}
+      </IconContext.Provider>
     </button>
   );
 };
