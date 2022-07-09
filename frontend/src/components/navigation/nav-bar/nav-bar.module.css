@@ -1,0 +1,41 @@
+.navBar {
+  background-color: #000;
+  height: 3.5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.icon {
+  background: none;
+  border: 0rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.navMenu,
+.navMenuActive {
+  position: fixed;
+  background-color: #fff;
+  margin-top: 3.5rem;
+  width: 0%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+
+.navMenuActive {
+  width: 100%;
+  visibility: visible;
+  overflow-y: auto;
+}
+
+.navMenuItems {
+  width: 100%;
+}

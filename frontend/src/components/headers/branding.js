@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Img from 'react-cool-img';
 import styles from './branding.module.css';
 
 /**
@@ -8,11 +8,10 @@ const Branding = () => (
   <section id="branding" className={styles.branding}>
     <div id="siteTitle">
       <a href="https://ssa.ccny.cuny.edu/" className={styles.a}>
-        <Image
-          src="/images/spitzer_logo.svg"
-          alt="The Bernard and Anne Spitzer School of Architecture"
-          height={65}
-          width={479}
+        <Img
+          src="/wp-content/themes/ssa/images/spitzer_logo.svg"
+          alt="The Bernard and Anne Spitzer School of Architecture logo."
+          className={styles.img}
         />
       </a>
     </div>

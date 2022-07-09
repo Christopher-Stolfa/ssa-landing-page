@@ -41,12 +41,6 @@ const SlideShow = ({ slides = [] }) => {
                   src={slide.src}
                   alt={slide.alt}
                   className={styles.imageContainer}
-
-                  // blurDataURL="./images/blur.webp"
-                  // placeholder="blur"
-                  // quality={60}
-                  // layout="fill"
-                  // objectFit="cover"
                 />
               </div>
             </div>

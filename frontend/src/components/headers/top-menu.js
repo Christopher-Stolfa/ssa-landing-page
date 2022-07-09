@@ -1,6 +1,6 @@
 import styles from './top-menu.module.css';
-import Image from 'next/image';
-import SearchBar from './search-bar';
+import Img from 'react-cool-img';
+// import SearchBar from './search-bar';
 
 /**
  * The top menu that contains the small ssa logo
@@ -12,11 +12,15 @@ const TopMenu = () => {
       <div className={styles.wrapper}>
         <div className={styles.logoWrapper}>
           <a href="http://www.ccny.cuny.edu/">
-            <Image src="/images/logo-ccny-horz-w.svg" alt="city college of new york" width={180} height={16.83} />
+            <Img
+              src="/wp-content/themes/ssa/images/logo-ccny-horz-w.svg"
+              alt="city college of new york logo"
+              className={styles.img}
+            />
           </a>
         </div>
       </div>
-      <SearchBar />
+      {/* <SearchBar /> */}
     </nav>
   );
 };

@@ -1,0 +1,11 @@
+.menuBar {
+  position: relative;
+  z-index: 1;
+  flex-direction: row;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  height: 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}

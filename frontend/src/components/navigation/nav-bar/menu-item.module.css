@@ -1,0 +1,22 @@
+.navMenuItem {
+  padding: 2rem;
+  border-bottom: 0.06rem solid #ccc;
+}
+
+.navMenuItem:last-child {
+  border-bottom: 0rem;
+}
+
+.subMenu {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.subMenuItem {
+  flex: 1 1 50%;
+}
+
+.subMenuList {
+  padding: 0.5rem;
+}

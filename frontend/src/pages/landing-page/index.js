@@ -1,9 +1,9 @@
-// import Header from '../../components/headers/header';
+import Header from '../../components/headers/header';
 import Hero from '../../components/hero/hero';
 
 const LandingPage = () => (
   <main id="container-container">
-    {/* <Header /> */}
+    <Header />
     <Hero />
   </main>
 );
