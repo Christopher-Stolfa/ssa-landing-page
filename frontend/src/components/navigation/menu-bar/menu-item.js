@@ -30,7 +30,7 @@ const MenuItem = ({ index, menuOption: { title = '', subMenu = [] } }) => {
       document.removeEventListener('mousedown', handleClick);
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [open, handleClick, handleKeyDown]);
+  }, [open]);
 
   useEffect(() => {
     open && menuItemRef.current.querySelectorAll('a')[currentFocus].focus();
