@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wp-content/reactpress/apps/ssa-landing-page/build/static/css/main.445a6319.css",
+    "main.js": "/wp-content/reactpress/apps/ssa-landing-page/build/static/js/main.7fb22282.js",
+    "index.html": "/wp-content/reactpress/apps/ssa-landing-page/build/index.html",
+    "main.445a6319.css.map": "/wp-content/reactpress/apps/ssa-landing-page/build/static/css/main.445a6319.css.map",
+    "main.7fb22282.js.map": "/wp-content/reactpress/apps/ssa-landing-page/build/static/js/main.7fb22282.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.445a6319.css",
+    "static/js/main.7fb22282.js"
+  ]
+}

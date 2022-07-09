@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import styles from './video-container.module.css';
 import utilStyles from '../../styles/utils.module.css';
 import useTheme from '../../hooks/useTheme';
+import Img from 'react-cool-img';
 import Image from 'next/image';
 
 const VideoContainer = ({ url = '' }) => {
@@ -35,9 +36,9 @@ const VideoContainer = ({ url = '' }) => {
           />
         ) : (
           <div className={styles.cover}>
-            <Image
+            <Img
               alt="spitzer school of architecture digital tour video cover"
-              src={'/images/digitour-thumbnail.jpg'}
+              src={'/wp-content/themes/ssa/landing-page-assets/images/digitour-thumbnail.jpg'}
               priority="true"
               layout="fill"
               objectFit="cover"
