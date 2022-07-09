@@ -37,11 +37,9 @@ const VideoContainer = ({ url = '' }) => {
         ) : (
           <div className={styles.cover}>
             <Img
+              className={styles.img}
               alt="spitzer school of architecture digital tour video cover"
-              src={'/wp-content/themes/ssa/landing-page-assets/images/digitour-thumbnail.jpg'}
-              priority="true"
-              layout="fill"
-              objectFit="cover"
+              src="/wp-content/themes/ssa/landing-page-assets/images/digitour-thumbnail.jpg"
             />
             <button
               aria-label="play digital tour video"
