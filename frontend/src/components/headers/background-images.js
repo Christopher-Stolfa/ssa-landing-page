@@ -1,9 +1,11 @@
+const path = '/wp-content/themes/ssa/landing-page-assets/';
+
 const images = [
-  { src: '/wp-content/uploads/2018/06/banner_graduation.jpg' },
-  { src: '/wp-content/uploads/2019/10/urbanagram_2019AV60-011.jpg' },
-  { src: '/wp-content/uploads/2015/03/header03.jpg' },
-  { src: '/wp-content/uploads/2018/02/Homepageslider_concretebreak_resized.jpg' },
-  { src: '/wp-content/uploads/2015/03/header045.jpg' },
-  { src: '/wp-content/uploads/2021/08/UnitSystemBanner-scaled.jpg' },
+  { src: path + 'background-images/image-1.jpg' },
+  { src: path + 'background-images/image-2.jpg' },
+  { src: path + 'background-images/image-3.jpg' },
+  { src: path + 'background-images/image-4.jpg' },
+  { src: path + 'background-images/image-5.jpg' },
+  { src: path + 'background-images/image-6.jpg' },
 ];
 export default images;

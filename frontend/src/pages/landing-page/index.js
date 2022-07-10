@@ -2,10 +2,12 @@ import Header from '../../components/headers/header';
 import Hero from '../../components/hero/hero';
 
 const LandingPage = () => (
-  <main id="container-container">
+  <>
     <Header />
-    <Hero />
-  </main>
+    <main id="container-container">
+      <Hero />
+    </main>
+  </>
 );
 
 export default LandingPage;

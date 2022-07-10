@@ -29,10 +29,18 @@ const DesktopHeader = () => {
     <div className={styles.container}>
       {images.map(({ src }, i) => (
         <Img
-          key={`headerBackgroundImage${i}`}
+          key={src}
           src={src}
-          alt="Backdrop images"
-          className={currentIndex === i ? styles.currentImage : styles.image}
+          alt="Header background image"
+          style={{
+            position: 'absolute',
+            backgroundSize: 'cover',
+            objectFit: 'cover',
+            opacity: currentIndex === i ? 0.3 : 0,
+            transition: 'opacity 1000ms ease-in-out',
+            width: '100%',
+            height: '100%',
+          }}
         />
       ))}
       <div className={styles.wrapper} role="banner">
