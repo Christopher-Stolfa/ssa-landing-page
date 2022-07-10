@@ -15,7 +15,7 @@ const TopMenu = () => {
             <Img
               src="/wp-content/themes/ssa/images/logo-ccny-horz-w.svg"
               alt="city college of new york logo"
-              className={styles.img}
+              style={{ width: '180px', height: '16.83px' }}
             />
           </a>
         </div>
