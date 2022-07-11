@@ -14,11 +14,13 @@ const socialMedia = [
     title: 'instagram',
     link: 'https://instagram.com/whatsonatssa/',
     icon: 'FaInstagram',
+    altIcon: '',
   },
   {
     title: 'youtube',
     link: 'https://www.youtube.com/channel/UCd2v8X2TCyQHA2Ww2EpfTXA',
     icon: 'FaYoutube',
+    altIcon: '',
   },
   {
     title: 'facebook',
@@ -32,7 +34,7 @@ const socialMedia = [
     icon: 'FaLinkedinIn',
     altIcon: 'FaLinkedin',
   },
-  { title: 'twitter', link: 'https://twitter.com/citycollegeny', icon: 'FaTwitter' },
+  { title: 'twitter', link: 'https://twitter.com/citycollegeny', icon: 'FaTwitter', altIcon: '' },
 ];
 
 export { welcomeLink, subscribeLink, socialMedia };
