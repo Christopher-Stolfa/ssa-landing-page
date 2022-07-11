@@ -7,6 +7,7 @@ const LandingPage = () => (
   <>
     <Header />
     <main id="main" className={styles.container}>
+      <div className={styles.pad} />
       <Hero />
       <Offers />
     </main>

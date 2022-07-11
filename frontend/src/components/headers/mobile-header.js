@@ -9,17 +9,15 @@ import { ssaLogoSrc } from '../../imageData';
  * @returns
  */
 const MobileHeader = () => (
-  <div className={styles.wrapper}>
-    <NavBar menuOptions={menuOptions}>
-      <a className={styles.anchor} href={homeLink}>
-        <Img
-          src={ssaLogoSrc}
-          alt="Bernard and Anne Spitzer School of Architecture website logo."
-          className={styles.img}
-        />
-      </a>
-    </NavBar>
-  </div>
+  <NavBar menuOptions={menuOptions}>
+    <a className={styles.anchor} href={homeLink}>
+      <Img
+        src={ssaLogoSrc}
+        alt="Bernard and Anne Spitzer School of Architecture website logo."
+        className={styles.img}
+      />
+    </a>
+  </NavBar>
 );
 
 export default MobileHeader;
