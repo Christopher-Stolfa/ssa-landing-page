@@ -5,13 +5,13 @@ import MenuBar from '../navigation/menu-bar/menu-bar';
 import Img from 'react-cool-img';
 import { menuOptions } from './data';
 import { useEffect, useState } from 'react';
-import images from './background-images';
+import { backgroundImages } from '../../imageData';
 
 /**
  * This header is used if the window width is greater than 1024px
  */
 const DesktopHeader = () => {
-  const [currentIndex, setCurrentIndex] = useState(Math.floor(Math.random() * images.length));
+  const [currentIndex, setCurrentIndex] = useState(Math.floor(Math.random() * backgroundImages.length));
 
   /**
    * Every couple of seconds set a random index as the current index.
@@ -19,7 +19,7 @@ const DesktopHeader = () => {
    */
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex(Math.floor(Math.random() * images.length));
+      setCurrentIndex(Math.floor(Math.random() * backgroundImages.length));
     }, 7000);
 
     return () => clearInterval(intervalId);
@@ -27,7 +27,7 @@ const DesktopHeader = () => {
 
   return (
     <div className={styles.container}>
-      {images.map(({ src }, i) => (
+      {backgroundImages.map(({ src }, i) => (
         <Img
           key={src}
           src={src}

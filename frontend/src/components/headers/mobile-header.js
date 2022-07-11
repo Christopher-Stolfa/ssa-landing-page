@@ -1,7 +1,8 @@
 import styles from './mobile-header.module.css';
 import Img from 'react-cool-img';
 import NavBar from '../navigation/nav-bar/nav-bar';
-import { menuOptions } from './data';
+import { homeLink, menuOptions } from './data';
+import { ssaLogoSrc } from '../../imageData';
 
 /**
  * This header is used if the window width is less than 1024px
@@ -10,9 +11,9 @@ import { menuOptions } from './data';
 const MobileHeader = () => (
   <div className={styles.wrapper}>
     <NavBar menuOptions={menuOptions}>
-      <a className={styles.anchor} href="https://ssa.ccny.cuny.edu/">
+      <a className={styles.anchor} href={homeLink}>
         <Img
-          src="/wp-content/themes/ssa/images/spitzer_logo.svg"
+          src={ssaLogoSrc}
           alt="Bernard and Anne Spitzer School of Architecture website logo."
           className={styles.img}
         />

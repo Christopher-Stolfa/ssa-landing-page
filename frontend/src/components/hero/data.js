@@ -1,4 +1,3 @@
-const path = '/wp-content/themes/ssa/landing-page-assets/';
 /**
  * Welcome page link
  */
@@ -36,23 +35,4 @@ const socialMedia = [
   { title: 'twitter', link: 'https://twitter.com/citycollegeny', icon: 'FaTwitter' },
 ];
 
-/**
- * Slide Show image data
- */
-const imageData = [
-  {
-    src: path + 'slideshow-images/fav-bySirinSamman-0256.jpg',
-    alt: 'SSA students working on projects. Photo taken by Sirin Samman.',
-  },
-  { src: path + 'slideshow-images/image_19.jpg', alt: 'ssa campus image' },
-  {
-    src: path + 'slideshow-images/fav-bySirinSamman-0074.jpg',
-    alt: 'SSA student presentations. Photo taken by Sirin Samman.',
-  },
-  {
-    src: path + 'slideshow-images/fav-bySirinSamman-0230.jpg',
-    alt: 'SSA students having a discussion with a professor. Photo taken by Sirin Samman.',
-  },
-];
-
-export { welcomeLink, subscribeLink, socialMedia, imageData };
+export { welcomeLink, subscribeLink, socialMedia };
