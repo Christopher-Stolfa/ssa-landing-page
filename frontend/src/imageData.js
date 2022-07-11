@@ -24,7 +24,10 @@ const backgroundImages = [
   { src: path + 'background-images/image-5.jpg' },
   { src: path + 'background-images/image-6.jpg' },
 ];
-
+/**
+ * Offers page background image
+ */
+const offersBackgroundSrc = path + 'images/fav-bySirinSamman-1448-X3.jpg';
 /**
  * Image data used for slide show
  */
@@ -44,4 +47,4 @@ const slideImages = [
   },
 ];
 
-export { ssaLogoSrc, ccnyLogoSrc, backgroundImages, slideImages };
+export { ssaLogoSrc, ccnyLogoSrc, offersBackgroundSrc, backgroundImages, slideImages };

@@ -1,11 +1,12 @@
 import styles from './offers.module.css';
-import utilStyles from '../../../styles/utils.module.css';
-import useTheme from '../../../hooks/useTheme';
-import YellowButton from '../../buttons/yellow-button/yellow-button';
-import { welcomeLink } from '../../../data/navigation-data';
+import utilStyles from '../../styles/utils.module.css';
+import useTheme from '../../hooks/useTheme';
+import YellowButton from '../buttons/yellow-button/yellow-button';
+import { welcomeLink } from '../../data/navigation-data';
 import TransparentCard from '../../cards/transparent-card/transparent-card';
 import columnsData from './columns-data';
 import Img from 'react-cool-img';
+import { offersBackgroundSrc } from '../../imageData';
 
 const Offers = () => {
   const { device, deviceTypes } = useTheme();
@@ -14,9 +15,9 @@ const Offers = () => {
       <div className={styles.container}>
         <div className={styles.backgroundImage}>
           <Img
-            className={styles.img}
-            alt="The Bernard and Anne Spitzer School of Architecture"
-            src="/wp-content/themes/ssa/landing-page-assets/images/fav-bySirinSamman-1448-X3.jpg"
+            style={{ position: 'relative', backgroundSize: 'cover', objectFit: 'cover' }}
+            alt="The Bernard and Anne Spitzer School of Architecture background image."
+            src={offersBackgroundSrc}
           />
         </div>
         <div className={styles[device]}>

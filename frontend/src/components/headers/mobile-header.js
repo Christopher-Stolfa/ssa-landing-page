@@ -1,7 +1,7 @@
 import styles from './mobile-header.module.css';
 import Img from 'react-cool-img';
 import NavBar from '../navigation/nav-bar/nav-bar';
-import { homeLink, menuOptions } from './data';
+import { homeLink, menuOptions } from '../../data';
 import { ssaLogoSrc } from '../../imageData';
 
 /**

@@ -1,7 +1,7 @@
 import styles from './top-menu.module.css';
 import Img from 'react-cool-img';
 import { ccnyLogoSrc } from '../../imageData';
-import { ccnyLink } from './data';
+import { ccnyLink } from '../../data';
 // import SearchBar from './search-bar';
 
 /**

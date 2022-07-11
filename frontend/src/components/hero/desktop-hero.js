@@ -1,6 +1,6 @@
 import styles from './desktop-hero.module.css';
 import utilStyles from '../../styles/utils.module.css';
-import { socialMedia, subscribeLink, welcomeLink } from './data';
+import { socialMedia, subscribeLink, welcomeLink } from '../../data';
 import YellowButton from '../buttons/yellow-button/yellow-button';
 import YellowSocialButton from '../buttons/yellow-social-button/yellow-social-button';
 import SlideShow from '../slide-show/slide-show';

@@ -1,6 +1,6 @@
 import Img from 'react-cool-img';
 import styles from './branding.module.css';
-import { homeLink } from './data';
+import { homeLink } from '../../data';
 import { ssaLogoSrc } from '../../imageData';
 
 /**
