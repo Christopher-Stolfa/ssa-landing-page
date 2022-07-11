@@ -3,6 +3,10 @@
  */
 const welcomeLink = 'https://ssa.ccny.cuny.edu/about/welcome/';
 /**
+ * Link to SSA home page
+ */
+const homeLink = 'https://ssa.ccny.cuny.edu/';
+/**
  * Link to newsletter subscription
  */
 const subscribeLink = 'https://cuny.us4.list-manage.com/subscribe?u=21d6a2d10f897e4acb0de0db3&id=6281843555';
@@ -322,4 +326,4 @@ const menuOptions = [
   },
 ];
 
-export { welcomeLink, subscribeLink, socialMedia, navLinks, menuOptions };
+export { homeLink, welcomeLink, subscribeLink, socialMedia, navLinks, menuOptions };

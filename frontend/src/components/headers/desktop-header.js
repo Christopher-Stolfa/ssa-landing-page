@@ -3,7 +3,7 @@ import TopMenu from './top-menu';
 import Branding from './branding';
 import MenuBar from '../navigation/menu-bar/menu-bar';
 import Img from 'react-cool-img';
-import { menuOptions } from './navigation-data';
+import { menuOptions } from './data';
 import { useEffect, useState } from 'react';
 import images from './background-images';
 

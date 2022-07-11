@@ -1,7 +1,7 @@
 import styles from './mobile-header.module.css';
 import Img from 'react-cool-img';
 import NavBar from '../navigation/nav-bar/nav-bar';
-import { menuOptions } from './navigation-data';
+import { menuOptions } from './data';
 
 /**
  * This header is used if the window width is less than 1024px
