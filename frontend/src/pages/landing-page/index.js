@@ -13,7 +13,6 @@ const LandingPage = () => {
     <>
       <Header />
       <main id="main" className={styles.container}>
-        {device !== desktop && <div className={styles.pad} />}
         <Hero />
         <Offers />
       </main>

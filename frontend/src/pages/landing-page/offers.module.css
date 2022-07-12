@@ -1,33 +1,5 @@
 .container {
   position: relative;
-}
-
-.desktop {
-  height: calc(100vh);
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.mobile {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-content: flex-start;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-}
-
-.tablet {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -67,4 +39,10 @@
   align-items: center;
   gap: 1rem;
   width: 100%;
+}
+
+@media screen and (max-width: 64rem) {
+  .container {
+    height: 100vh;
+  }
 }

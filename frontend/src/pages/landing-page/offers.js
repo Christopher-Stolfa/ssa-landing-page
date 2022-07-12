@@ -19,23 +19,21 @@ const Offers = () => {
           src={offersBackgroundSrc}
         />
       </div>
-      <div className={styles[device]}>
-        <h2 className={utilStyles.heading2Xl}>What We Offer</h2>
-        <ul className={styles.listWrapper}>
-          {columnsData.map(({ row1, row2 }, i) => (
-            <li className={styles.row} key={`offers-row-${i}`}>
-              <TransparentCard title={row1.title} subTitle={row1.subTitle} />
-              {device !== deviceTypes.mobile && <TransparentCard title={row2.title} subTitle={row2.subTitle} />}
-            </li>
-          ))}
-        </ul>
-        <div className={styles.buttonWrap}>
-          <YellowButton
-            link={welcomeLink}
-            text="learn more"
-            label="learn more about the bernard and anne spitzer school of architecture"
-          />
-        </div>
+      <h2 className={utilStyles.heading2Xl}>What We Offer</h2>
+      <ul className={styles.listWrapper}>
+        {columnsData.map(({ row1, row2 }, i) => (
+          <li className={styles.row} key={`offers-row-${i}`}>
+            <TransparentCard title={row1.title} subTitle={row1.subTitle} />
+            {device !== deviceTypes.mobile && <TransparentCard title={row2.title} subTitle={row2.subTitle} />}
+          </li>
+        ))}
+      </ul>
+      <div className={styles.buttonWrap}>
+        <YellowButton
+          link={welcomeLink}
+          text="learn more"
+          label="learn more about the bernard and anne spitzer school of architecture"
+        />
       </div>
     </section>
   );
