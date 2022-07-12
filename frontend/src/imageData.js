@@ -12,7 +12,10 @@ const ssaLogoSrc = path + 'images/spitzer_logo.svg';
  * ccny logo
  */
 const ccnyLogoSrc = path + 'images/logo-ccny-horz-w.svg';
-
+/**
+ * Digital tour thumbnail
+ */
+const digitourSrc = path + 'images/digitour-thumbnail.jpg';
 /**
  * Image data used header backdrop
  */
@@ -47,4 +50,4 @@ const slideImages = [
   },
 ];
 
-export { ssaLogoSrc, ccnyLogoSrc, offersBackgroundSrc, backgroundImages, slideImages };
+export { ssaLogoSrc, ccnyLogoSrc, offersBackgroundSrc, backgroundImages, slideImages, digitourSrc };

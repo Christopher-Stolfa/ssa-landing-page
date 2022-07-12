@@ -4,7 +4,7 @@ import styles from './video-container.module.css';
 import utilStyles from '../../styles/utils.module.css';
 import useTheme from '../../hooks/useTheme';
 import Img from 'react-cool-img';
-import Image from 'next/image';
+import { digitourSrc } from '../../imageData';
 
 const VideoContainer = ({ url = '' }) => {
   const {
@@ -37,9 +37,16 @@ const VideoContainer = ({ url = '' }) => {
         ) : (
           <div className={styles.cover}>
             <Img
-              className={styles.img}
+              style={{
+                position: 'relative',
+                width: '100%',
+                height: '100%',
+                backgroundSize: 'cover',
+                backgroundColor: '#000',
+                objectFit: 'cover',
+              }}
               alt="spitzer school of architecture digital tour video cover"
-              src="/wp-content/themes/ssa/landing-page-assets/images/digitour-thumbnail.jpg"
+              src={digitourSrc}
             />
             <button
               aria-label="play digital tour video"

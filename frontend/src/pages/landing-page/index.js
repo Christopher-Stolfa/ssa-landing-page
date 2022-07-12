@@ -3,6 +3,7 @@ import Header from '../../components/headers/header';
 import Hero from '../../components/hero/hero';
 import Offers from './offers';
 import useTheme from '../../hooks/useTheme';
+import VideoContainer from '../../components/video-container/video-container';
 
 const LandingPage = () => {
   const {
@@ -15,6 +16,7 @@ const LandingPage = () => {
       <main id="main" className={styles.container}>
         <Hero />
         <Offers />
+        <VideoContainer />
       </main>
     </>
   );
