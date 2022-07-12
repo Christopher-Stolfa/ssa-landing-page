@@ -3,6 +3,8 @@
 }
 
 .container {
+  padding: 0.5rem;
+  padding-top: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +12,6 @@
   border-radius: 50%;
   background-color: #333;
   border: none;
-  padding: 0.5rem;
   text-decoration: none;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
