@@ -2,7 +2,7 @@ import styles from './mobile-hero.module.css';
 import utilStyles from '../../styles/utils.module.css';
 import SlideShow from '../slide-show/slide-show';
 import YellowButton from '../buttons/yellow-button/yellow-button';
-import { welcomeLink } from './data';
+import { welcomeLink } from '../../data';
 import { slideImages } from '../../imageData';
 
 /**

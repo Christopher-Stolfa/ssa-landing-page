@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  background: #000;
+  float: left;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5em;
+  padding: 1em;
+}
+
+.copywrite {
+  font-size: 14px;
+  line-height: 1.9em;
+  font-family: adelle-sans, 'roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  border-top: #fff 1px solid;
+  padding-top: 0.5em;
+}
+
+.socialMediaList {
+  display: flex;
+  gap: 1em;
+}
+
+.text,
+.subscribeText {
+  font-size: 1em;
+}
+
+.subscribeText {
+  color: #fecd08;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}

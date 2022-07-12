@@ -1,0 +1,68 @@
+/* DESKTOP FOOTER CLASSNAMES */
+.container {
+  width: 100%;
+  height: 220px;
+  background: #000;
+  float: left;
+  color: #fff;
+}
+
+.footerWrapper {
+  max-width: 960px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.logosWrapper {
+  position: relative;
+  float: left;
+  width: 50%;
+  border-right: 1px solid #fff;
+  padding-top: 0;
+}
+
+.socialMedia {
+  float: left;
+  width: 50%;
+}
+
+.socialMediaWrapper {
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 36px;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.copywrite {
+  margin: 0 auto 1em auto;
+  text-align: center;
+  color: #fff;
+  line-height: 1.9em;
+  font-size: 15px;
+  font-family: adelle-sans, 'roboto', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  padding: 0.5em;
+  border-bottom: #fff 1px solid;
+}
+
+.cunyLogo {
+  padding: 0 2em 0 0;
+  float: right;
+  margin-top: 10px;
+}
+
+.ssaLogoSmall {
+  margin-right: 15px;
+  float: right;
+  margin-top: 10px;
+}
+
+.ssaLogoMedium {
+  display: block;
+  padding: 0;
+  float: right;
+  margin-right: 1.75em;
+}
