@@ -15,6 +15,10 @@ const ccnyLink = 'https://ccny.cuny.edu';
  */
 const subscribeLink = 'https://cuny.us4.list-manage.com/subscribe?u=21d6a2d10f897e4acb0de0db3&id=6281843555';
 /**
+ * SSA digital tour youtube video
+ */
+const digitalTourVideo = 'https://www.youtube.com/watch?v=1do_gD8dIYs';
+/**
  * Social media navigation data
  */
 const socialMedia = [
@@ -330,4 +334,4 @@ const menuOptions = [
   },
 ];
 
-export { homeLink, ccnyLink, welcomeLink, subscribeLink, socialMedia, navLinks, menuOptions };
+export { homeLink, ccnyLink, welcomeLink, subscribeLink, socialMedia, navLinks, menuOptions, digitalTourVideo };

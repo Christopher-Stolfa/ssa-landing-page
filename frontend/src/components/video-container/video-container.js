@@ -26,13 +26,13 @@ const VideoContainer = ({ url = '' }) => {
             controls
             volume={1}
             muted={true}
-            config={{
-              file: {
-                attributes: {
-                  controlsList: 'nodownload',
-                },
-              },
-            }}
+            // config={{
+            //   file: {
+            //     attributes: {
+            //       controlsList: 'nodownload',
+            //     },
+            //   },
+            // }}
           />
         ) : (
           <div className={styles.cover}>
