@@ -1,5 +1,6 @@
 .branding {
   display: block;
+  position: relative;
 }
 
 .a {

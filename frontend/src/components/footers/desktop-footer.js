@@ -1,8 +1,8 @@
 import styles from './desktop-footer.module.css';
 import Img from 'react-cool-img';
 import GraySocialButton from '../buttons/gray-social-button/gray-social-button';
-import { socialMedia } from '../../../data/navigation-data';
-import { socialMedia } from '../../data';
+import { ccnyLink, cunyLink, socialMedia, ssaLink } from '../../data';
+import { ccnyLogo2Src, ccnyLogoSrc, cunyLogoSrc, ssaSmallLogoSrc } from '../../imageData';
 /**
  * The website footer component for desktop screen sizes
  */
@@ -13,32 +13,38 @@ const DesktopFooter = () => (
         © {new Date().getFullYear()} The Bernard and Anne Spitzer School of Architecture. All rights reserved.
       </p>
       <div className={styles.logosWrapper}>
-        <a href="https://ssa.ccny.cuny.edu/">
+        <a href={ssaLink}>
           <Img
-            className={styles.ssaLogoMedium}
-            src="/images/ssa_small.svg"
+            src={ssaSmallLogoSrc}
             alt="The Bernard and Anne Spitzer School of Architecture"
             title="The Bernard and Anne Spitzer School of Architecture"
-            width={447}
-            height={60}
+            style={{
+              width: '28rem',
+              height: '3.75rem',
+              float: 'right',
+              marginRight: '1.75rem',
+            }}
           />
         </a>
-        <a className={styles.cunyLogo} href="https://www.cuny.edu/">
+        <a className={styles.cunyLogo} href={cunyLink}>
           <Img
-            src="/images/cuny.svg"
+            src={cunyLogoSrc}
             title="City University of New York"
             alt="City University of New York"
-            width={31}
-            height={30}
+            style={{
+              width: '1.9rem',
+              height: '1.9rem',
+            }}
           />
         </a>
-        <a className={styles.ssaLogoSmall} href="https://www.ccny.cuny.edu/">
-          <Image
-            src="/images/ccny.svg"
+        <a className={styles.ssaLogoSmall} href={ccnyLink}>
+          <Img
+            src={ccnyLogo2Src}
             alt="The City College of New York"
             title="The City College of New York"
-            width={97}
-            height={30}
+            style={{
+              height: '1.9rem',
+            }}
           />
         </a>
       </div>

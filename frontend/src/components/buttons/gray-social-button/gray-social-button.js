@@ -11,11 +11,9 @@ import * as icons from 'react-icons/fa';
 const GraySocialButton = ({ title, link, icon }) => {
   const Icon = icons[icon] || <span>{title}</span>;
   return (
-    <div className={styles.container}>
-      <a id={`graySocialButton${title}`} aria-label={title} className={styles.iconWrapper} href={link}>
-        <Icon size={'36px'} />
-      </a>
-    </div>
+    <a id={`graySocialButton${title}`} aria-label={title} className={styles.iconWrapper} href={link}>
+      <Icon size={'25px'} />
+    </a>
   );
 };
 

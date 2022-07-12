@@ -1,8 +1,8 @@
 import styles from './mobile-footer.module.css';
-import YellowSocialButton from '../../buttons/yellow-social-button/yellow-social-button';
-import YellowButton from '../../buttons/yellow-button/yellow-button';
-import NavLink from '../../navigation/nav-link/nav-link';
-import { socialMedia, navLinks, subscribeLink } from '../../../data/navigation-data';
+import YellowSocialButton from '../buttons/yellow-social-button/yellow-social-button';
+import YellowButton from '../buttons/yellow-button/yellow-button';
+import NavLink from '../navigation/nav-link/nav-link';
+import { socialMedia, navLinks, subscribeLink } from '../../data';
 
 /**
  * The website footer component for mobile screen sizes
@@ -18,7 +18,13 @@ const MobileFooter = () => (
       ))}
     </ul>
     <p className={styles.subscribeText}>Join our email list!</p>
-    <YellowButton link={subscribeLink}>subscribe</YellowButton>
+    <YellowButton
+      link={subscribeLink}
+      text="learn more"
+      label="learn more about the bernard and anne spitzer school of architecture"
+    >
+      subscribe
+    </YellowButton>
     <ul className={styles.navLinks}>
       {navLinks.map(({ title, link }, i) => (
         <li key={`mobile-footer-nav-link-${i}`}>

@@ -1,7 +1,7 @@
 import styles from './mobile-header.module.css';
 import Img from 'react-cool-img';
 import NavBar from '../navigation/nav-bar/nav-bar';
-import { homeLink, menuOptions } from '../../data';
+import { ssaLink, menuOptions } from '../../data';
 import { ssaLogoSrc } from '../../imageData';
 
 /**
@@ -10,7 +10,7 @@ import { ssaLogoSrc } from '../../imageData';
  */
 const MobileHeader = () => (
   <NavBar menuOptions={menuOptions}>
-    <a className={styles.anchor} href={homeLink}>
+    <a className={styles.anchor} href={ssaLink}>
       <Img
         src={ssaLogoSrc}
         alt="Bernard and Anne Spitzer School of Architecture website logo."

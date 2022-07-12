@@ -1,6 +1,6 @@
 import Img from 'react-cool-img';
 import styles from './branding.module.css';
-import { homeLink } from '../../data';
+import { ssaLink } from '../../data';
 import { ssaLogoSrc } from '../../imageData';
 
 /**
@@ -9,7 +9,7 @@ import { ssaLogoSrc } from '../../imageData';
 const Branding = () => (
   <section id="branding" className={styles.branding}>
     <div id="siteTitle">
-      <a href={homeLink} className={styles.a}>
+      <a href={ssaLink} className={styles.a}>
         <Img
           src={ssaLogoSrc}
           alt="The Bernard and Anne Spitzer School of Architecture logo."

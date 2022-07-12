@@ -13,6 +13,10 @@ const ssaLogoSrc = path + 'images/spitzer_logo.svg';
  */
 const ccnyLogoSrc = path + 'images/logo-ccny-horz-w.svg';
 /**
+ * ccny logo 2
+ */
+const ccnyLogo2Src = path + 'images/ccny.svg';
+/**
  * cuny logo
  */
 const cunyLogoSrc = path + 'images/cuny.svg';
@@ -63,6 +67,7 @@ export {
   ssaSmallLogoSrc,
   ssaLogoSrc,
   ccnyLogoSrc,
+  ccnyLogo2Src,
   offersBackgroundSrc,
   backgroundImages,
   slideImages,

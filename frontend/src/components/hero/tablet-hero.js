@@ -10,7 +10,6 @@ import { slideImages } from '../../imageData';
  */
 const TabletHero = () => (
   <section className={styles.container}>
-    <div style={{ height: '3.5rem' }} />
     <div className={styles.headingWrap}>
       <h1 className={utilStyles.headingXl}>
         <span className={styles.yellowText}>{"new york city's "}</span>

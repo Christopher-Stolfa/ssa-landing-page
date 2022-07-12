@@ -5,6 +5,7 @@ import Offers from './offers';
 import useTheme from '../../hooks/useTheme';
 import VideoContainer from '../../components/video-container/video-container';
 import { digitalTourVideo } from '../../data';
+import Footer from '../../components/footers/footer';
 
 const LandingPage = () => {
   const {
@@ -15,10 +16,12 @@ const LandingPage = () => {
     <>
       <Header />
       <main id="main" className={styles.container}>
+        {device !== desktop && <div style={{ height: '3.5rem' }} />}
         <Hero />
         <Offers />
         <VideoContainer url={digitalTourVideo} />
       </main>
+      <Footer />
     </>
   );
 };

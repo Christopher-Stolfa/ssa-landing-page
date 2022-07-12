@@ -1,4 +1,4 @@
 .placeHolder {
-  height: 100vh;
+  height: calc(100vh - 3.5rem);
   background-color: #000;
 }
