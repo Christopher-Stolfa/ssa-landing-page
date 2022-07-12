@@ -4,8 +4,12 @@ import App from './app';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
-  uri: 'https://ssa.ccny.cuny.edu/',
+  uri: 'https://dev-spitzer-arch.pantheonsite.io/graphql',
   cache: new InMemoryCache(),
+  csrfPrevention: true, // see below for more about this
+  cors: {
+    origin: ['*'],
+  },
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
