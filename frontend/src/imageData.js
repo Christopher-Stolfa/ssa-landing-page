@@ -13,9 +13,17 @@ const ssaLogoSrc = path + 'images/spitzer_logo.svg';
  */
 const ccnyLogoSrc = path + 'images/logo-ccny-horz-w.svg';
 /**
+ * cuny logo
+ */
+const cunyLogoSrc = path + 'images/cuny.svg';
+/**
  * Digital tour thumbnail
  */
 const digitourSrc = path + 'images/digitour-thumbnail.jpg';
+/**
+ * ssa small logl
+ */
+const ssaSmallLogoSrc = path + 'images/ssa_small.svg';
 /**
  * Image data used header backdrop
  */
@@ -50,4 +58,13 @@ const slideImages = [
   },
 ];
 
-export { ssaLogoSrc, ccnyLogoSrc, offersBackgroundSrc, backgroundImages, slideImages, digitourSrc };
+export {
+  cunyLogoSrc,
+  ssaSmallLogoSrc,
+  ssaLogoSrc,
+  ccnyLogoSrc,
+  offersBackgroundSrc,
+  backgroundImages,
+  slideImages,
+  digitourSrc,
+};

@@ -5,11 +5,15 @@ const welcomeLink = 'https://ssa.ccny.cuny.edu/about/welcome/';
 /**
  * Link to SSA home page
  */
-const homeLink = 'https://ssa.ccny.cuny.edu/';
+const ssaLink = 'https://ssa.ccny.cuny.edu/';
 /**
  * Link to CCNY home page
  */
 const ccnyLink = 'https://ccny.cuny.edu';
+/**
+ * Link to CUNY home page
+ */
+const cunyLink = 'https://www.cuny.edu/';
 /**
  * Link to newsletter subscription
  */
@@ -334,4 +338,14 @@ const menuOptions = [
   },
 ];
 
-export { homeLink, ccnyLink, welcomeLink, subscribeLink, socialMedia, navLinks, menuOptions, digitalTourVideo };
+export {
+  cunyLink,
+  ssaLink,
+  ccnyLink,
+  welcomeLink,
+  subscribeLink,
+  socialMedia,
+  navLinks,
+  menuOptions,
+  digitalTourVideo,
+};
