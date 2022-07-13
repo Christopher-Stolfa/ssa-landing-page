@@ -8,7 +8,7 @@ import { socialMedia, navLinks, subscribeLink } from '../../data';
  * The website footer component for mobile screen sizes
  */
 const MobileFooter = () => (
-  <footer className={styles.container}>
+  <footer id="footer" className={styles.container}>
     <p className={styles.text}>{"Want to know what's on at Spitzer?"}</p>
     <ul className={styles.socialMediaList}>
       {socialMedia.map((props, i) => (

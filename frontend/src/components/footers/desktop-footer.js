@@ -7,7 +7,7 @@ import { ccnyLogo2Src, ccnyLogoSrc, cunyLogoSrc, ssaSmallLogoSrc } from '../../i
  * The website footer component for desktop screen sizes
  */
 const DesktopFooter = () => (
-  <footer className={styles.container} role="contentinfo">
+  <footer id="footer" className={styles.container} role="contentinfo">
     <div className={styles.footerWrapper}>
       <p className={styles.copywrite}>
         © {new Date().getFullYear()} The Bernard and Anne Spitzer School of Architecture. All rights reserved.

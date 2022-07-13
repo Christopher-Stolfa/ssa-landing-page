@@ -32,7 +32,7 @@ const Header = () => {
   if (data) {
     const gqlMenuOptions = parser(data);
     return (
-      <header id="header-gql">
+      <header id="header">
         {device === deviceTypes.desktop ? (
           <DesktopHeader menuOptions={gqlMenuOptions} />
         ) : (
