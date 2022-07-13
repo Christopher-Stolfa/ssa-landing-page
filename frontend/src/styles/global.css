@@ -14,6 +14,12 @@ body {
   overflow: auto;
 }
 
+@media screen and (max-width: 782px) {
+  html {
+    margin-top: 0 !important;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
