@@ -3,6 +3,9 @@ import MobileHeader from './mobile-header';
 import DesktopHeader from './desktop-header';
 import { useQuery } from '@apollo/client';
 import { useEffect } from 'react';
+import { menuOptions } from '../../data';
+
+import parser from './parser';
 import GET_MENU from './query';
 
 /**
@@ -12,14 +15,35 @@ const Header = () => {
   const { device, deviceTypes } = useTheme();
   const { loading, error, data } = useQuery(GET_MENU);
 
-  if (loading || error) return <header id="header" />;
+  // If app is loading or there graphql error use static menu options as a fallback.
+  if (loading || error) {
+    return (
+      <header id="header">
+        {device === deviceTypes.desktop ? (
+          <DesktopHeader menuOptions={menuOptions} />
+        ) : (
+          <MobileHeader menuOptions={menuOptions} />
+        )}
+      </header>
+    );
+  }
   if (error) {
-    console.log(error);
+    console.log('There has been a graphQL error with the menu.');
   }
+  // If the data has been received
   if (data) {
-    console.log(data);
+    const gqlMenuOptions = parser(data);
+    return (
+      <header id="header-gql">
+        {device === deviceTypes.desktop ? (
+          <DesktopHeader menuOptions={gqlMenuOptions} />
+        ) : (
+          <MobileHeader menuOptions={gqlMenuOptions} />
+        )}
+      </header>
+    );
   }
-  return <header id="header">{device === deviceTypes.desktop ? <DesktopHeader /> : <MobileHeader />}</header>;
+  return <header id="header" />;
 };
 
 export default Header;

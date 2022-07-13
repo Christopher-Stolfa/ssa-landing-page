@@ -18,6 +18,7 @@ const GET_MENU = gql`
               label
               parentId
               parentDatabaseId
+              url
               childItems {
                 nodes {
                   id
