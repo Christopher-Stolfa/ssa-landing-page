@@ -6,6 +6,7 @@ import useTheme from '../../hooks/useTheme';
 import VideoContainer from '../../components/video-container/video-container';
 import { digitalTourVideo } from '../../data';
 import Footer from '../../components/footers/footer';
+import SkipLinks from '../../components/skip-links/skip-links';
 
 const LandingPage = () => {
   const {
@@ -14,8 +15,9 @@ const LandingPage = () => {
   } = useTheme();
   return (
     <>
+      <SkipLinks />
       <Header />
-      <main id="main" className={styles.container}>
+      <main id="main-content" className={styles.container}>
         {device !== desktop && <div style={{ height: '3.5rem' }} />}
         <Hero />
         <Offers />
