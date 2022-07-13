@@ -6,26 +6,14 @@ const GET_MENU = gql`
       name
       menuItems(where: { parentDatabaseId: 0 }) {
         nodes {
-          id
-          databaseId
           label
-          parentId
-          parentDatabaseId
           childItems {
             nodes {
-              id
-              databaseId
               label
-              parentId
-              parentDatabaseId
               url
               childItems {
                 nodes {
-                  id
-                  databaseId
                   label
-                  parentId
-                  parentDatabaseId
                 }
               }
             }
