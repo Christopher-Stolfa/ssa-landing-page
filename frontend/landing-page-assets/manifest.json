@@ -1,7 +1,7 @@
 {
   "name": "The Bernard and Anne Spitzer School of Architecture",
   "short_name": "CCNY SSA landing page",
-  "start_url": "/",
+  "start_url": "/wp-content/themes/ssa/landing-page-assets/",
   "display": "standalone",
   "description": "The Bernard and Anne Spitzer School of Architecture landing page.",
   "background_color": "#ffffff",
