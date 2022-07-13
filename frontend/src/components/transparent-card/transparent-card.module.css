@@ -25,18 +25,8 @@
   background: #fecd08;
 }
 
-.title {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.07em;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-
 .subTitle {
   display: inline-block;
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
