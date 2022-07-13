@@ -2,7 +2,6 @@ import useTheme from '../../hooks/useTheme';
 import MobileHeader from './mobile-header';
 import DesktopHeader from './desktop-header';
 import { useQuery } from '@apollo/client';
-import { useEffect } from 'react';
 import { menuOptions } from '../../data';
 
 import parser from './parser';
