@@ -3,10 +3,12 @@ import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { useState, useEffect, useRef } from 'react';
 import MenuItem from './menu-item';
+import useTheme from '../../../hooks/useTheme';
 
-const NavBar = ({ menuOptions = [], children }) => {
+const NavBar = ({ children }) => {
   const ref = useRef(null);
   const [toggle, setToggle] = useState(false);
+  const { menuOptions } = useTheme();
 
   // When the side menu opens,
   useEffect(() => {

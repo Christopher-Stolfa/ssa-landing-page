@@ -9,7 +9,7 @@ import { backgroundImages } from '../../imageData';
 /**
  * This header is used if the window width is greater than 1024px
  */
-const DesktopHeader = ({ menuOptions = [] }) => {
+const DesktopHeader = () => {
   const [currentIndex, setCurrentIndex] = useState(Math.floor(Math.random() * backgroundImages.length));
 
   /**
@@ -45,7 +45,7 @@ const DesktopHeader = ({ menuOptions = [] }) => {
       <div className={styles.wrapper} role="banner">
         <TopMenu />
         <Branding />
-        <MenuBar menuOptions={menuOptions} />
+        <MenuBar />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 /**
  * Parses graphql wordpress data into a well defined object
  */
-const parser = (data) => {
+const formatMenuData = (data) => {
   const nodes = data.menu.menuItems.nodes;
   return nodes.map(({ label, childItems }) => {
     const subMenus = childItems.nodes;
@@ -18,7 +18,7 @@ const parser = (data) => {
             subTitle: label,
             items: childItems.nodes.map(({ label, url }) => {
               return {
-                title: label,
+                name: label,
                 link: url,
               };
             }),
@@ -33,7 +33,7 @@ const parser = (data) => {
           subTitle: '',
           items: childItems.nodes.map(({ label, url }) => {
             return {
-              title: label,
+              name: label,
               link: url,
             };
           }),
@@ -43,4 +43,4 @@ const parser = (data) => {
   });
 };
 
-export default parser;
+export default formatMenuData;

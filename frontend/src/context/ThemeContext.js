@@ -1,4 +1,8 @@
 import { useState, useEffect, createContext } from 'react';
+import { useQuery } from '@apollo/client';
+import GET_MENU from '../queries/query';
+import formatMenuData from './format-menu-data';
+import { menuOptions } from '../data';
 import debounce from '../lib/debounce';
 
 const ThemeContext = createContext([{}, () => {}]);
@@ -10,7 +14,24 @@ const ThemeProvider = ({ children }) => {
   const [state, setState] = useState({
     dimensions: { height: undefined, width: undefined },
     device: undefined,
+    menuOptions: menuOptions,
   });
+
+  const { loading, error, data } = useQuery(GET_MENU);
+
+  useEffect(() => {
+    if (loading) {
+      console.log('loading');
+    }
+    if (error) {
+      console.log(error);
+    }
+    if (data) {
+      console.log('Retrieved menu data');
+      const formattedData = formatMenuData(data);
+      setState((state) => ({ ...state, menuOptions: formattedData }));
+    }
+  }, [loading, error, data]);
 
   useEffect(() => {
     const handleDimensions = () => {

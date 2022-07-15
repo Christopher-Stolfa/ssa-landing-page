@@ -3,19 +3,22 @@ import ReactDOM from 'react-dom/client';
 import App from './app';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import { Helmet } from 'react-helmet';
+import { ThemeProvider } from './context/ThemeContext';
 
 const assetsPath = '/wp-content/themes/ssa/landing-page-assets/';
 const isProduction = process.env.NODE_ENV === 'production';
 
 const client = new ApolloClient({
   uri: 'https://dev-spitzer-arch.pantheonsite.io/graphql',
+  // uri: 'https://ssa.ccny.cuny.edu/graphql',
   cache: new InMemoryCache(),
-  csrfPrevention: true, // see below for more about this
+  csrfPrevention: true,
   cors: {
-    origin: ['*'],
+    origin: ['https://dev-spitzer-arch.pantheonsite.io'],
   },
+  credentials: 'same-origin',
 });
-
+console.log(process.env.PUBLIC_URL);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -46,7 +49,9 @@ root.render(
     </Helmet>
     <React.StrictMode>
       <ApolloProvider client={client}>
-        <App />
+        <ThemeProvider>
+          <App />
+        </ThemeProvider>
       </ApolloProvider>
     </React.StrictMode>
   </>,
