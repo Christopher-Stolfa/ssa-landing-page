@@ -8,7 +8,7 @@ import { ssaLogoSrc } from '../../imageData';
  * This header is used if the window width is less than 1024px
  * @returns
  */
-const MobileHeader = () => (
+const MobileHeader = ({ menuOptions = [] }) => (
   <NavBar menuOptions={menuOptions}>
     <a className={styles.anchor} href={ssaLink}>
       <Img

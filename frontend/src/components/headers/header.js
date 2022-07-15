@@ -14,34 +14,27 @@ const Header = () => {
   const { device, deviceTypes } = useTheme();
   const { loading, error, data } = useQuery(GET_MENU);
 
-  // If app is loading or there graphql error use static menu options as a fallback.
-  if (loading || error) {
-    error && console.log('There has been a graphQL error with the menu.');
-
-    return (
-      <header id="header">
-        {device === deviceTypes.desktop ? (
-          <DesktopHeader menuOptions={menuOptions} />
-        ) : (
-          <MobileHeader menuOptions={menuOptions} />
-        )}
-      </header>
-    );
+  if (loading) {
+    console.log('loading');
   }
-  // If the data has been received
+  if (error) {
+    console.log(error);
+  }
   if (data) {
-    const gqlMenuOptions = parser(data);
-    return (
-      <header id="header">
-        {device === deviceTypes.desktop ? (
-          <DesktopHeader menuOptions={gqlMenuOptions} />
-        ) : (
-          <MobileHeader menuOptions={gqlMenuOptions} />
-        )}
-      </header>
-    );
+    console.log('Retrieved Data');
+    console.log(data);
   }
-  return <header id="header" />;
+
+  // If app is loading or there graphql error use static menu options as a fallback.
+  return (
+    <header id="header">
+      {device === deviceTypes.desktop ? (
+        <DesktopHeader menuOptions={data ? parser(data) : menuOptions} />
+      ) : (
+        <MobileHeader menuOptions={data ? parser(data) : menuOptions} />
+      )}
+    </header>
+  );
 };
 
 export default Header;
