@@ -41,6 +41,7 @@ const SlideShow = ({ slides = [] }) => {
                   <Img
                     src={slide.src}
                     alt={slide.alt}
+                    lazy={false}
                     style={{
                       position: 'absolute',
                       inset: '0px',
