@@ -20,7 +20,7 @@ const TabletHero = () => (
     <SlideShow slides={slideImages} />
     <p className={styles.subHeading}>
       {
-        'Students engage with faculty, alumni, and the profession at large as we begin to reevaluate and reinvent the built environment for the next generation.'
+        'Creating a just, sustainable, and imaginative future for a rapidly urbanizing planet through innovative research and interdisciplinary collaboration.'
       }
     </p>
     <span className={styles.buttonWrap}>
