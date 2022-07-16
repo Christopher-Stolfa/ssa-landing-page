@@ -48,7 +48,7 @@ const socialMedia = [
     icon: 'FaLinkedinIn',
     altIcon: 'FaLinkedin',
   },
-  { title: 'twitter', link: 'https://twitter.com/citycollegeny', icon: 'FaTwitter' },
+  { title: 'twitter', link: 'https://twitter.com/whatsonatssa', icon: 'FaTwitter' },
 ];
 
 /**

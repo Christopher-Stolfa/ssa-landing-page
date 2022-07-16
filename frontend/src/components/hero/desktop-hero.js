@@ -19,12 +19,9 @@ const DesktopHero = () => (
       </h1>
 
       <p className={utilStyles.headingMd}>
-        {'Students engage with faculty, alumni, and the'}
-        <br />
-        {'profession at large as we begin to reevaluate and'}
-        <br />
-        {'reinvent the built environment for the next generation.'}
-        <br />
+        {
+          'Creating a just, sustainable, and imaginative future for a rapidly urbanizing planet through innovative research and interdisciplinary collaboration.'
+        }
       </p>
       <YellowButton
         link={welcomeLink}
