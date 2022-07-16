@@ -1,63 +1,64 @@
 /**
  * This path only uses wordpress path to image assets in production build.
  */
-// const path = process.env.NODE_ENV !== 'production' ? '' : '/wp-content/themes/ssa/landing-page-assets/';
 
 /**
  * ssa logo
  */
-const ssaLogoSrc = 'images/spitzer_logo.svg';
+const ssaLogoSrc = process.env.PUBLIC_URL + '/images/spitzer_logo.svg';
 
 /**
  * ccny logo
  */
-const ccnyLogoSrc = 'images/logo-ccny-horz-w.svg';
+const ccnyLogoSrc = process.env.PUBLIC_URL + '/images/logo-ccny-horz-w.svg';
 /**
  * ccny logo 2
  */
-const ccnyLogo2Src = 'images/ccny.svg';
+const ccnyLogo2Src = process.env.PUBLIC_URL + '/images/ccny.svg';
 /**
  * cuny logo
  */
-const cunyLogoSrc = 'images/cuny.svg';
+const cunyLogoSrc = process.env.PUBLIC_URL + '/images/cuny.svg';
 /**
  * Digital tour thumbnail
  */
-const digitourSrc = 'images/digitour-thumbnail.jpg';
+const digitourSrc = process.env.PUBLIC_URL + '/images/digitour-thumbnail.jpg';
 /**
  * ssa small logl
  */
-const ssaSmallLogoSrc = 'images/ssa_small.svg';
+const ssaSmallLogoSrc = process.env.PUBLIC_URL + '/images/ssa_small.svg';
+
+const searchIconSrc = process.env.PUBLIC_URL + '/images/search-icon.svg';
 /**
  * Image data used header backdrop
  */
 const backgroundImages = [
-  { src: 'background-images/image-1.jpg' },
-  { src: 'background-images/image-2.jpg' },
-  { src: 'background-images/image-3.jpg' },
-  { src: 'background-images/image-4.jpg' },
-  { src: 'background-images/image-5.jpg' },
-  { src: 'background-images/image-6.jpg' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-1.jpg' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-2.jpg' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-3.jpg' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-4.jpg' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-5.jpg' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-6.jpg' },
 ];
 /**
  * Offers page background image
  */
-const offersBackgroundSrc = 'images/fav-bySirinSamman-1448-X3.jpg';
+const offersBackgroundSrc = process.env.PUBLIC_URL + '/images/fav-bySirinSamman-1448-X3.jpg';
 /**
  * Image data used for slide show
  */
 const slideImages = [
   {
-    src: 'slideshow-images/fav-bySirinSamman-0256.jpg',
+    src: process.env.PUBLIC_URL + '/slideshow-images/fav-bySirinSamman-0256.jpg',
     alt: 'SSA students working on projects. Photo taken by Sirin Samman.',
   },
-  { src: 'slideshow-images/image_19.jpg', alt: 'ssa campus image' },
+  { src: process.env.PUBLIC_URL + '/slideshow-images/image_19.jpg', alt: 'ssa campus image' },
   {
-    src: 'slideshow-images/fav-bySirinSamman-0074.jpg',
+    src: process.env.PUBLIC_URL + '/slideshow-images/fav-bySirinSamman-0074.jpg',
     alt: 'SSA student presentations. Photo taken by Sirin Samman.',
   },
   {
-    src: 'slideshow-images/fav-bySirinSamman-0230.jpg',
+    src: process.env.PUBLIC_URL + '/slideshow-images/fav-bySirinSamman-0230.jpg',
     alt: 'SSA students having a discussion with a professor. Photo taken by Sirin Samman.',
   },
 ];
@@ -72,4 +73,5 @@ export {
   backgroundImages,
   slideImages,
   digitourSrc,
+  searchIconSrc,
 };

@@ -3,7 +3,6 @@ import Arrow from './arrow';
 import styles from './slide-show.module.css';
 import Pagination from './pagination';
 import Img from 'react-cool-img';
-// import Image from 'next/image';
 
 /**
  * @todo - Make slide transition animations

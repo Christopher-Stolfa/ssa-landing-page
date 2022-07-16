@@ -1,14 +1,12 @@
 import styles from './search-bar.module.css';
-import { useState, useEffect } from 'react';
-import { useRouter } from 'next/router';
-
-import Image from 'next/image';
+import { useState } from 'react';
+import Img from 'react-cool-img';
+import { searchIconSrc } from '../../imageData';
 
 /**
  * Search bar that queries your search term to the ssa search results page
  */
 const SearchBar = () => {
-  const router = useRouter();
   const [input, setInput] = useState('');
   /**
    * Handles search input
@@ -23,7 +21,7 @@ const SearchBar = () => {
    */
   const handleSubmit = (e) => {
     e.preventDefault();
-    router.push(`https://ssa.ccny.cuny.edu/search-results/?q=${input}`);
+    window.open(`https://ssa.ccny.cuny.edu/search-results/?q=${input}`);
   };
 
   return (
@@ -38,7 +36,7 @@ const SearchBar = () => {
         value={input}
       />
       <button type="submit" aria-label="submit" className={styles.searchButton}>
-        <Image src="/images/search-icon.svg" width={13} height={13} alt="Search Icon" />
+        <Img src={searchIconSrc} width={'13px'} height={'13px'} alt="Search Icon" />
       </button>
     </form>
   );
