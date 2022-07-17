@@ -10,7 +10,7 @@ import { slideImages } from '../../imageData';
  */
 const MobileHero = () => (
   <section className={styles.container}>
-    <div className={styles.headingWrap}>
+    <div className={styles.padding}>
       <h1 className={utilStyles.headingLg}>
         <span className={styles.yellowText}>{"new york city's "}</span>
         <span>{'flagship public school for '}</span>
@@ -18,11 +18,13 @@ const MobileHero = () => (
       </h1>
     </div>
     <SlideShow slides={slideImages} />
-    <p className={styles.subHeading}>
-      {
-        'Creating a just, sustainable, and imaginative future for a rapidly urbanizing planet through innovative research and interdisciplinary collaboration.'
-      }
-    </p>
+    <div className={styles.padding}>
+      <p className={styles.text}>
+        {
+          'Creating a just, sustainable, and imaginative future for a rapidly urbanizing planet through innovative research and interdisciplinary collaboration.'
+        }
+      </p>
+    </div>
     <span className={styles.buttonWrap}>
       <YellowButton
         link={welcomeLink}

@@ -3,22 +3,16 @@
   flex-direction: column;
   text-align: center;
   height: calc(100vh - 3.5rem);
-}
-.headingWrap,
-.subHeading,
-.buttonWrap {
   background-color: #000;
-}
-
-.headingWrap {
-  padding: 0.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .yellowText {
   color: #ffcc00;
 }
 
-.subHeading {
+.text {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
@@ -29,4 +23,22 @@
 
 .buttonWrap {
   padding: 0.5rem;
+}
+
+@media screen and (min-width: 420px) and (max-width: 520px) {
+  .padding {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 550px) {
+  .padding {
+    padding: 0.5rem 4rem 0.5rem 4rem;
+  }
+}
+
+@media screen and (min-width: 551px) and (max-width: 601px) {
+  .padding {
+    padding: 0.5rem 6rem 0.5rem 6rem;
+  }
 }
