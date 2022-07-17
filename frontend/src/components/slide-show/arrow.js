@@ -10,7 +10,33 @@ import { IconContext } from 'react-icons';
  * @param {Function} props.handleClick - Callback that triggers when clicked
  */
 const Arrow = ({ direction = 'left', handleClick = () => {} }) => {
-  const { device } = useTheme();
+  const {
+    device,
+    deviceTypes: { mobile, tablet, desktop },
+  } = useTheme();
+
+  const getStyle = () => {
+    let remSize = '1rem';
+    switch (device) {
+      case mobile:
+        remSize = '2rem';
+        break;
+      case tablet:
+        remSize = '2.25rem';
+        break;
+      case desktop:
+        remSize = '2.5rem';
+        break;
+      default:
+        remSize = '1rem';
+        break;
+    }
+    return {
+      height: remSize,
+      width: remSize,
+    };
+  };
+
   return (
     <button
       aria-label={`slide show ${direction} arrow`}
@@ -18,7 +44,11 @@ const Arrow = ({ direction = 'left', handleClick = () => {} }) => {
       className={styles[direction]}
       onClick={handleClick}
     >
-      <IconContext.Provider value={{ style: { height: '2rem', width: '2rem' } }}>
+      <IconContext.Provider
+        value={{
+          style: getStyle(),
+        }}
+      >
         {direction === 'left' ? <MdKeyboardArrowLeft /> : <MdKeyboardArrowRight />}
       </IconContext.Provider>
     </button>
