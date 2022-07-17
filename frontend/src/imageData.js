@@ -32,7 +32,11 @@ const ssaSmallLogoSrc = process.env.PUBLIC_URL + '/images/ssa_small.svg';
  */
 const searchIconSrc = process.env.PUBLIC_URL + '/images/search-icon.svg';
 /**
- * Image data used header backdrop
+ * Blur image
+ */
+const blurImgSrc = process.env.PUBLIC_URL + '/images/blur.webp';
+/**
+ * Images used in the header background
  */
 const backgroundImages = [
   { src: process.env.PUBLIC_URL + '/background-images/image-1.jpg' },
@@ -76,4 +80,5 @@ export {
   slideImages,
   digitourSrc,
   searchIconSrc,
+  blurImgSrc,
 };

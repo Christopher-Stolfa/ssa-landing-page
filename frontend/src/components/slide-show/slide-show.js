@@ -3,6 +3,7 @@ import Arrow from './arrow';
 import styles from './slide-show.module.css';
 import Pagination from './pagination';
 import Img from 'react-cool-img';
+import { blurImgSrc } from '../../imageData';
 
 /**
  * @todo - Make slide transition animations
@@ -40,7 +41,7 @@ const SlideShow = ({ slides = [] }) => {
                   <Img
                     src={slide.src}
                     alt={slide.alt}
-                    lazy={false}
+                    placeholder={blurImgSrc}
                     style={{
                       position: 'absolute',
                       inset: '0px',
