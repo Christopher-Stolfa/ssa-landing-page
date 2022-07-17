@@ -18,7 +18,7 @@ const Arrow = ({ direction = 'left', handleClick = () => {} }) => {
       className={styles[direction]}
       onClick={handleClick}
     >
-      <IconContext.Provider value={{ style: { height: '100%', width: '100%' } }}>
+      <IconContext.Provider value={{ style: { height: '2rem', width: '2rem' } }}>
         {direction === 'left' ? <MdKeyboardArrowLeft /> : <MdKeyboardArrowRight />}
       </IconContext.Provider>
     </button>
