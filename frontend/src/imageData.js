@@ -24,10 +24,12 @@ const cunyLogoSrc = process.env.PUBLIC_URL + '/images/cuny.svg';
  */
 const digitourSrc = process.env.PUBLIC_URL + '/images/digitour-thumbnail.jpg';
 /**
- * ssa small logl
+ * ssa small logo
  */
 const ssaSmallLogoSrc = process.env.PUBLIC_URL + '/images/ssa_small.svg';
-
+/**
+ * Search icon
+ */
 const searchIconSrc = process.env.PUBLIC_URL + '/images/search-icon.svg';
 /**
  * Image data used header backdrop
