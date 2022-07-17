@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider, ApolloLink, HttpLink } from '@apollo/client';
+import { RetryLink } from '@apollo/client/link/retry';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from './context/ThemeContext';
 
-// const assetsPath = '/wp-content/themes/ssa/landing-page-assets/';
-// const isProduction = process.env.NODE_ENV === 'production';
-
 const client = new ApolloClient({
-  uri: 'https://dev-spitzer-arch.pantheonsite.io/graphql',
-  // uri: 'https://ssa.ccny.cuny.edu/graphql',
   cache: new InMemoryCache(),
+  link: ApolloLink.from([new RetryLink({
+    attempts: (count, operation, error) => {
+      return !!error && operation.operationName != 'specialCase';
+    },
+    delay: (count, operation, error) => {
+      return count * 1000 * Math.random();
+    },
+  }), new HttpLink({ uri: 'https://dev-spitzer-arch.pantheonsite.io/graphql' })]),
   csrfPrevention: true,
   cors: {
     origin: ['https://dev-spitzer-arch.pantheonsite.io'],
