@@ -42,6 +42,7 @@ const SlideShow = ({ slides = [] }) => {
                     src={slide.src}
                     alt={slide.alt}
                     placeholder={blurImgSrc}
+                    lazy={false}
                     style={{
                       position: 'absolute',
                       inset: '0px',
