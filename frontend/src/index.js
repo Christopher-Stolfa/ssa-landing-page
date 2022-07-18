@@ -8,14 +8,17 @@ import { ThemeProvider } from './context/ThemeContext';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link: ApolloLink.from([new RetryLink({
-    attempts: (count, operation, error) => {
-      return !!error && operation.operationName != 'specialCase';
-    },
-    delay: (count, operation, error) => {
-      return count * 1000 * Math.random();
-    },
-  }), new HttpLink({ uri: 'https://dev-spitzer-arch.pantheonsite.io/graphql' })]),
+  link: ApolloLink.from([
+    new RetryLink({
+      attempts: (count, operation, error) => {
+        return !!error && operation.operationName != 'specialCase';
+      },
+      delay: (count, operation, error) => {
+        return count * 1000 * Math.random();
+      },
+    }),
+    new HttpLink({ uri: 'https://dev-spitzer-arch.pantheonsite.io/graphql' }),
+  ]),
   csrfPrevention: true,
   cors: {
     origin: ['https://dev-spitzer-arch.pantheonsite.io'],
