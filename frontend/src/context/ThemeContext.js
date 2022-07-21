@@ -1,8 +1,4 @@
-import { useState, useEffect, createContext } from 'react';
-import { useQuery } from '@apollo/client';
-import GET_MENU from '../queries/query';
-import formatMenuData from './format-menu-data';
-import { menuOptions } from '../data';
+import { useState, useEffect, createContext, useCallback } from 'react';
 import debounce from '../lib/debounce';
 
 const ThemeContext = createContext([{}, () => {}]);
@@ -14,27 +10,10 @@ const ThemeProvider = ({ children }) => {
   const [state, setState] = useState({
     dimensions: { height: undefined, width: undefined },
     device: undefined,
-    menuOptions: menuOptions,
   });
 
-  const { loading, error, data } = useQuery(GET_MENU);
-
-  useEffect(() => {
-    if (loading) {
-      console.log('loading');
-    }
-    if (error) {
-      console.log(error);
-    }
-    if (data) {
-      console.log('Retrieved menu data');
-      const formattedData = formatMenuData(data);
-      setState((state) => ({ ...state, menuOptions: formattedData }));
-    }
-  }, [loading, error, data]);
-
-  useEffect(() => {
-    const handleDimensions = () => {
+  const handleDimensions = useCallback(() => {
+    {
       let device = '';
 
       const dimensions = {
@@ -65,20 +44,28 @@ const ThemeProvider = ({ children }) => {
         device = 'desktop';
       }
 
-      setState((state) => ({ ...state, dimensions, device }));
-    };
-    handleDimensions();
+      setState((state) => {
+        return { ...state, dimensions, device };
+      });
+    }
+  }, [state, setState]);
+
+  useEffect(() => {
     // Debouncer to handle web page resizing without re-rendering too quickly
+    handleDimensions();
     const debouncedHandleResize = debounce(() => {
       handleDimensions();
-    }, 25);
+    }, 100);
     window.addEventListener('resize', debouncedHandleResize);
     return () => {
       window.removeEventListener('resize', debouncedHandleResize);
     };
   }, []);
 
-  return <ThemeContext.Provider value={[state, setState]}>{children}</ThemeContext.Provider>;
+  /**
+   * When the device dimensions are recognized, render the children (the root app)
+   */
+  return <ThemeContext.Provider value={[state, setState]}>{state.device && children}</ThemeContext.Provider>;
 };
 
 export { ThemeContext, ThemeProvider };
