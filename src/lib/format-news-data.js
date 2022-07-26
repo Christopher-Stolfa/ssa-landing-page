@@ -12,7 +12,7 @@ const formatNewsData = (data) => {
     newString = newString.replace(stripEntities, '');
     return newString;
   };
-  return edges.slice(0, Math.ceil(3)).map(({ node: { title, date, link, excerpt } }) => ({
+  return edges.map(({ node: { title, date, link, excerpt } }) => ({
     title,
     date,
     link,
