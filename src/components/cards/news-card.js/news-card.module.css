@@ -1,0 +1,35 @@
+.anchor {
+  color: #000;
+}
+
+.container {
+  padding: 1rem;
+  box-shadow: 0 4px 8px -2px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 600px;
+  border-radius: 0.25rem;
+}
+
+.container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* Tablet device width */
+/* @media screen and (min-width: 37.5rem) {
+  .container {
+    flex: 0 1 calc(50% - 1rem);
+  }
+} */
+/* Desktop device width */
+@media screen and (max-width: 37.563rem) {
+  .container {
+    width: 100%;
+  }
+}

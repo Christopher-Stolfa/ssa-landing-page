@@ -1,0 +1,123 @@
+.navLink {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.heading2Xl {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.25rem;
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
+  text-transform: uppercase;
+  line-height: 43px;
+  letter-spacing: 0.07em;
+}
+
+.headingXl {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.1rem;
+  color: #fff;
+  text-shadow: 0.2rem 0.2rem 0.3rem black;
+  text-transform: uppercase;
+  line-height: 43px;
+  letter-spacing: 0.07rem;
+}
+
+.headingLg {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 1);
+}
+
+.headingMdLg {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  font-style: normal;
+  color: #fff;
+  text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 35px;
+}
+
+.headingSm {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.03rem;
+  font-weight: 900;
+  width: 100%;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+
+.headingXs {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #aaa;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  margin-bottom: 0.05rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.navLink {
+  color: #000;
+  text-transform: none;
+  font-size: 1rem;
+  letter-spacing: 0.03rem;
+  font-weight: 900;
+  line-height: 1.5rem;
+  width: 100%;
+  cursor: pointer;
+}

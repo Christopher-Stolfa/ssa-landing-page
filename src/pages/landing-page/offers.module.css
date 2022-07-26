@@ -1,0 +1,49 @@
+.container {
+  flex: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.backgroundImage {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+}
+
+.buttonWrap {
+  padding: 1rem;
+}
+
+.listWrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media screen and (max-width: 37.563rem) {
+  .container {
+    height: 100vh;
+  }
+}
