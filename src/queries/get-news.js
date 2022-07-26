@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 const GET_NEWS = gql`
   query getLatestNews {
-    posts(where: { categoryName: "News", orderby: { field: DATE, order: DESC } }) {
+    posts(where: { categoryName: "News", orderby: { field: DATE, order: DESC } }, first: 3) {
       edges {
         node {
           date
