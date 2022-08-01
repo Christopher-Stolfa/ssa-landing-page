@@ -8,6 +8,7 @@
     "graphql": "^16.5.0",
     "gray-matter": "^4.0.3",
     "react": "^18.2.0",
+    "react-app-polyfill": "^3.0.0",
     "react-cool-img": "^1.2.12",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
