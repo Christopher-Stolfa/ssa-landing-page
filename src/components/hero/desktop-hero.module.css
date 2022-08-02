@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   align-content: flex-start;
-  height: calc(100vh - 11rem);
+  height: 600px;
 }
 
 .leftHero {
@@ -36,4 +36,16 @@
   display: flex;
   justify-content: flex-start;
   gap: 1em;
+}
+
+@media screen and (min-width: 1432px) {
+  .container {
+    height: 700px;
+  }
+}
+
+@media screen and (min-width: 1624px) {
+  .container {
+    height: 800px;
+  }
 }
