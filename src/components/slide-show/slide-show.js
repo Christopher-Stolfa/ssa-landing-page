@@ -2,8 +2,6 @@ import { useState } from 'react';
 import Arrow from './arrow';
 import styles from './slide-show.module.css';
 import Pagination from './pagination';
-import Img from 'react-cool-img';
-import { blurImgSrc } from '../../imageData';
 
 /**
  * @todo - Make slide transition animations
@@ -34,15 +32,16 @@ const SlideShow = ({ slides = [] }) => {
       <Pagination current={current} slides={slides} selectSlide={selectSlide} />
       <div className={styles.viewport}>
         <div style={{ transform: `translate3d(-${current * 100}%, 0px, 0px)` }} className={styles.slideContainer}>
-          {slides.map((slide, i) => (
+          {slides.map(({ src, alt, srcSet, sizes }, i) => (
             <div key={`slideShowImage${i}`} className={styles.slide}>
               <div className={styles.slideInner}>
                 <span className={styles.imageWrap}>
-                  <Img
-                    src={slide.src}
-                    alt={slide.alt}
-                    placeholder={blurImgSrc}
-                    lazy={false}
+                  <img
+                    alt={alt}
+                    sizes={sizes}
+                    srcSet={srcSet}
+                    src={src}
+                    loading="lazy"
                     style={{
                       position: 'absolute',
                       inset: '0px',
