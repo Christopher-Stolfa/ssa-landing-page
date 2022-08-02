@@ -22,9 +22,9 @@ const News = () => {
     return (
       <aside className={styles.container}>
         <section className={styles.cardsContainer}>
-          <div className={styles.headingWrap}>
-            <h2 className={utilStyles.headingLg}>Recent News</h2>
-          </div>
+          <h2 className={utilStyles.headingLg} style={{ color: '#000', textShadow: 'none' }}>
+            Recent News
+          </h2>
           <ul className={styles.cards}>
             {newsData.map((data) => (
               <NewsCard key={data.title} {...data} />

@@ -5,6 +5,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0 2rem 0;
+  background-color: #fff9ED;
 }
 
 .cardsContainer {
@@ -33,21 +34,15 @@
   /* margin: 0rem 1rem 0rem 1rem; */
 }
 
-.headingWrap {
-  background-color: #000;
-  padding: 0.50rem 0rem 0.50rem 0rem;
-  width: 600px;
-}
-
 .yellowText {
   color: #ffcc00;
 }
 
-@media screen and (min-width: 960px) {
+/* @media screen and (min-width: 960px) {
   .container {
     width: 960px;
   }
-}
+} */
 
 @media screen and (max-width: 37.563rem) {
   .buttonContainer {
