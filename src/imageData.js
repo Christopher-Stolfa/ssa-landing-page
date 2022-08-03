@@ -39,12 +39,12 @@ const blurImgSrc = process.env.PUBLIC_URL + '/images/blur.webp';
  * Images used in the header background
  */
 const backgroundImages = [
-  { src: process.env.PUBLIC_URL + '/background-images/image-1.jpg' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-2.jpg' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-3.jpg' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-4.jpg' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-5.jpg' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-6.jpg' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-1.png' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-2.png' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-3.png' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-4.png' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-5.png' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-6.png' },
 ];
 /**
  * Offers page background image
@@ -70,7 +70,7 @@ const offersBackgroundSrc = process.env.PUBLIC_URL + '/images/fav-bySirinSamman-
 // ];
 
 const slideImagesPath = process.env.PUBLIC_URL + '/slideshow-images';
-const slideImagesSizes = '' // '(max-width: 85rem) 85rem, 100vw';
+const slideImagesSizes = ''; // '(max-width: 85rem) 85rem, 100vw';
 const slideImages = [
   {
     src: slideImagesPath + '/SpitzerSideview_RafaelVinolyArchitects/SpitzerSideview_RafaelVinolyArchitects-medium.png',
