@@ -8,7 +8,7 @@ const NewsCard = ({ date, title, link, excerpt }) => {
       <a href={link} className={styles.anchor}>
         <div className={styles.flexBox}>
           <span>{dateStr}</span>
-          <h4>{title}</h4>
+          <h3>{title}</h3>
           <p className={styles.excerpt}>{excerpt}</p>
         </div>
       </a>
