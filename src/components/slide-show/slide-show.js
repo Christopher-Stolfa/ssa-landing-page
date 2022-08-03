@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Arrow from './arrow';
 import styles from './slide-show.module.css';
 import Pagination from './pagination';
+import Img from 'react-cool-img';
 
 /**
  * @todo - Make slide transition animations
@@ -36,12 +37,11 @@ const SlideShow = ({ slides = [] }) => {
             <div key={`slideShowImage${i}`} className={styles.slide}>
               <div className={styles.slideInner}>
                 <span className={styles.imageWrap}>
-                  <img
+                  <Img
                     alt={alt}
                     sizes={sizes}
                     srcSet={srcSet}
                     src={src}
-                    loading="lazy"
                     style={{
                       position: 'absolute',
                       inset: '0px',

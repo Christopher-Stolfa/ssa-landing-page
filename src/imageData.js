@@ -22,7 +22,7 @@ const cunyLogoSrc = process.env.PUBLIC_URL + '/images/cuny.svg';
 /**
  * Digital tour thumbnail
  */
-const digitourSrc = process.env.PUBLIC_URL + '/images/digitour-thumbnail.jpg';
+const digitourSrc = process.env.PUBLIC_URL + '/images/digitour-thumbnail.webp';
 /**
  * ssa small logo
  */
@@ -39,17 +39,17 @@ const blurImgSrc = process.env.PUBLIC_URL + '/images/blur.webp';
  * Images used in the header background
  */
 const backgroundImages = [
-  { src: process.env.PUBLIC_URL + '/background-images/image-1.png' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-2.png' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-3.png' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-4.png' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-5.png' },
-  { src: process.env.PUBLIC_URL + '/background-images/image-6.png' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-1.webp' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-2.webp' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-3.webp' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-4.webp' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-5.webp' },
+  { src: process.env.PUBLIC_URL + '/background-images/image-6.webp' },
 ];
 /**
  * Offers page background image
  */
-const offersBackgroundSrc = process.env.PUBLIC_URL + '/images/fav-bySirinSamman-1448-X3.jpg';
+const offersBackgroundSrc = process.env.PUBLIC_URL + '/images/fav-bySirinSamman-1448-X3.webp';
 /**
  * Image data used for slide show
  */
@@ -73,57 +73,57 @@ const slideImagesPath = process.env.PUBLIC_URL + '/slideshow-images';
 const slideImagesSizes = ''; // '(max-width: 85rem) 85rem, 100vw';
 const slideImages = [
   {
-    src: slideImagesPath + '/SpitzerSideview_RafaelVinolyArchitects/SpitzerSideview_RafaelVinolyArchitects-medium.png',
+    src: slideImagesPath + '/SpitzerSideview_RafaelVinolyArchitects/SpitzerSideview_RafaelVinolyArchitects.webp',
     srcSet: [
-      slideImagesPath +
-        '/SpitzerSideview_RafaelVinolyArchitects/SpitzerSideview_RafaelVinolyArchitects-medium.png 1203w',
-      slideImagesPath +
-        '/SpitzerSideview_RafaelVinolyArchitects/SpitzerSideview_RafaelVinolyArchitects-large.png 1633w',
+      // slideImagesPath +
+      //   '/SpitzerSideview_RafaelVinolyArchitects/SpitzerSideview_RafaelVinolyArchitects-medium.png 1203w',
+      // slideImagesPath +
+      //   '/SpitzerSideview_RafaelVinolyArchitects/SpitzerSideview_RafaelVinolyArchitects-large.png 1633w',
     ].toString(),
     alt: 'Exterior photo of The Bernard and Anne Spitzer School of Architecture. Photo by  Rafael Viñoly Architects, ©Bruce Damonte.',
     sizes: slideImagesSizes,
   },
   {
-    src: slideImagesPath + '/fav-bySirinSamman-0256/fav-bySirinSamman-medium.png',
+    src: slideImagesPath + '/fav-bySirinSamman-0256/fav-bySirinSamman.webp',
     srcSet: [
-      slideImagesPath + '/fav-bySirinSamman-0256/fav-bySirinSamman-0256-medium.png 1074w',
-      slideImagesPath + '/fav-bySirinSamman-0256/fav-bySirinSamman-0256-large.png 1400w',
+      // slideImagesPath + '/fav-bySirinSamman-0256/fav-bySirinSamman-0256-medium.png 1074w',
+      // slideImagesPath + '/fav-bySirinSamman-0256/fav-bySirinSamman-0256-large.png 1400w',
     ].toString(),
     alt: 'Students collaborating during studio hours using digital and analog medium. Photo by Sirin Samman.',
     sizes: slideImagesSizes,
   },
   {
-    src: slideImagesPath + '/139A6163-X3/139A6163-X3-medium.png',
+    src: slideImagesPath + '/139A6163-X3/139A6163-X3.webp',
     srcSet: [
-      slideImagesPath + '/139A6163-X3/139A6163-X3-medium.png 1060w',
-      slideImagesPath + '/139A6163-X3/139A6163-X3-large.png 1400w',
+      // slideImagesPath + '/139A6163-X3/139A6163-X3-medium.png 1060w',
+      // slideImagesPath + '/139A6163-X3/139A6163-X3-large.png 1400w',
     ].toString(),
     alt: 'Students working on physical models in studio. Photo by Sirin Samman.',
     sizes: slideImagesSizes,
   },
   {
-    src: slideImagesPath + '/fav-bySirinSamman-0230/fav-bySirinSamman-0230-medium.png',
+    src: slideImagesPath + '/fav-bySirinSamman-0230/fav-bySirinSamman-0230.webp',
     srcSet: [
-      slideImagesPath + '/fav-bySirinSamman-0230/fav-bySirinSamman-0230-medium.png 1068w',
-      slideImagesPath + '/fav-bySirinSamman-0230/fav-bySirinSamman-0230-large.png 1400w',
+      // slideImagesPath + '/fav-bySirinSamman-0230/fav-bySirinSamman-0230-medium.png 1068w',
+      // slideImagesPath + '/fav-bySirinSamman-0230/fav-bySirinSamman-0230-large.png 1400w',
     ].toString(),
     alt: 'Students gather around a professor during a collective feedback session. Photo by Sirin Samman.',
     sizes: slideImagesSizes,
   },
   {
-    src: slideImagesPath + '/fav-bySirinSamman-0074/fav-bySirinSamman-0074-medium.png',
+    src: slideImagesPath + '/fav-bySirinSamman-0074/fav-bySirinSamman-0074.webp',
     srcSet: [
-      slideImagesPath + '/fav-bySirinSamman-0074/fav-bySirinSamman-0074-medium.png 1097w',
-      slideImagesPath + '/fav-bySirinSamman-0074/fav-bySirinSamman-0074-large.png 1400w',
+      // slideImagesPath + '/fav-bySirinSamman-0074/fav-bySirinSamman-0074-medium.png 1097w',
+      // slideImagesPath + '/fav-bySirinSamman-0074/fav-bySirinSamman-0074-large.png 1400w',
     ].toString(),
     alt: 'Professors and students listening in during a project presentation. Photo by Sirin Samman.',
     sizes: slideImagesSizes,
   },
   {
-    src: slideImagesPath + '/fav-bySirinSamman-1448-X3/fav-bySirinSamman-1448-X3-medium.png',
+    src: slideImagesPath + '/fav-bySirinSamman-1448-X3/fav-bySirinSamman-1448-X3.webp',
     srcSet: [
-      slideImagesPath + '/fav-bySirinSamman-1448-X3/fav-bySirinSamman-1448-X3-medium.png 1074w',
-      slideImagesPath + '/fav-bySirinSamman-1448-X3/fav-bySirinSamman-1448-X3-large.png 1400w',
+      // slideImagesPath + '/fav-bySirinSamman-1448-X3/fav-bySirinSamman-1448-X3-medium.png 1074w',
+      // slideImagesPath + '/fav-bySirinSamman-1448-X3/fav-bySirinSamman-1448-X3-large.png 1400w',
     ].toString(),
     alt: 'Exterior photo of The Bernard and Anne Spitzer School of Architecture. Photo by Sirin Samman.',
     sizes: slideImagesSizes,

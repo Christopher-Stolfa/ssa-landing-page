@@ -7,6 +7,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, ApolloLink, HttpLink } fro
 import { RetryLink } from '@apollo/client/link/retry';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from './context/ThemeContext';
+import { backgroundImages, slideImages } from './imageData';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -55,6 +56,12 @@ root.render(
         rel="stylesheet"
         type="text/css"
       />
+      {/* {backgroundImages.map(({ src }, i) => (
+        <link key={'backgroundImagesPreload' + i} rel="preload" as="image" href={src} />
+      ))}
+      {slideImages.map(({ src, srcSet, sizes }, i) => (
+        <link key={'slideImagesPreload' + i} rel="preload" as="image" href={src} imageSrcSet={srcSet} sizes={sizes} />
+      ))} */}
     </Helmet>
     <React.StrictMode>
       <ApolloProvider client={client}>
