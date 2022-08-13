@@ -6,11 +6,13 @@ const NewsCard = ({ date, title, link, excerpt }) => {
   return (
     <li className={styles.container}>
       <a href={link} className={styles.anchor}>
-        <div className={styles.flexBox}>
-          <span>{dateStr}</span>
-          <h3>{title}</h3>
-          <p className={styles.excerpt}>{excerpt}</p>
-        </div>
+        <article className={styles.flexBox}>
+          <span className={styles.date}>{dateStr}</span>
+          <h3 className={styles.title}>{title}</h3>
+          <span className={styles.excerptWrapper}>
+            <p className={styles.excerpt}>{excerpt}</p>
+          </span>
+        </article>
       </a>
     </li>
   );
