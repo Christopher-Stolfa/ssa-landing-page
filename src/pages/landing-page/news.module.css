@@ -1,26 +1,17 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem 0 2rem 0;
-  background-color: #fff9ED;
-}
-
 .cardsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
 }
 
 .buttonContainer {
-  padding: 0.5rem;
-  display: inline-flex;
-  flex-direction: row;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem;
+}
+
+.anchor {
+  color: #000;
+  text-decoration: underline;
 }
 
 .cards {
@@ -28,10 +19,9 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 0.7rem;
   align-items: center;
-  /* margin: 0rem 1rem 0rem 1rem; */
+  margin: 1rem auto;
 }
 
 .yellowText {
@@ -44,11 +34,8 @@
   }
 } */
 
-@media screen and (max-width: 37.563rem) {
-  .buttonContainer {
-    flex-direction: column;
-  }
-  .headingWrap {
-    width: 100%;
+@media screen and (max-width: 58rem) {
+  .section {
+    border-bottom: 1px solid #ccc;
   }
 }

@@ -8,6 +8,7 @@ import { digitalTourVideo } from '../../data';
 import Footer from '../../components/footers/footer';
 import SkipLinks from '../../components/skip-links/skip-links';
 import News from './news';
+import Calendar from './calendar';
 
 const LandingPage = () => {
   const {
@@ -23,7 +24,13 @@ const LandingPage = () => {
         {device !== desktop && <div style={{ height: '3.5rem' }} />}
         <Hero />
         <Offers />
-        <News />
+        <div className={styles.flexBackground}>
+          <div className={styles.flex}>
+            <News />
+            <Calendar />
+          </div>
+        </div>
+
         <VideoContainer url={digitalTourVideo} />
       </main>
       <Footer />

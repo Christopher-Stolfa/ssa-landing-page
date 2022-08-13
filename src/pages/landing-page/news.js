@@ -20,30 +20,21 @@ const News = () => {
     console.log('Retrieved news data');
     const newsData = formatNewsData(data);
     return (
-      <aside className={styles.container}>
-        <section className={styles.cardsContainer}>
+      <section className={styles.section}>
+        <div className={styles.cardsContainer}>
           <h2 className={utilStyles.headingLg} style={{ color: '#000', textShadow: 'none' }}>
-            Recent News
+            News
           </h2>
           <ul className={styles.cards}>
             {newsData.map((data) => (
               <NewsCard key={data.title} {...data} />
             ))}
           </ul>
-          <div className={styles.buttonContainer}>
-            <YellowButton
-              link={'https://dev-spitzer-arch.pantheonsite.io/blog/category/news/'}
-              text="more news"
-              label="learn more about the bernard and anne spitzer school of architecture"
-            />
-            <YellowButton
-              link={'https://dev-spitzer-arch.pantheonsite.io/events/'}
-              text="events"
-              label="learn more about the bernard and anne spitzer school of architecture"
-            />
-          </div>
-        </section>
-      </aside>
+          <a href="https://dev-spitzer-arch.pantheonsite.io/blog/category/news/" className={styles.anchor}>
+            More News
+          </a>
+        </div>
+      </section>
     );
   }
 

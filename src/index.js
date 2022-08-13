@@ -1,5 +1,6 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
+import 'intersection-observer';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app';
@@ -52,15 +53,31 @@ root.render(
       />
       <meta name="author" content="Christopher Stolfa" />
       <link
-        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Roboto+Condensed:400,700"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Roboto+Condensed:400,700&display=swap"
         rel="stylesheet"
         type="text/css"
       />
       {/* {backgroundImages.map(({ src }, i) => (
-        <link key={'backgroundImagesPreload' + i} rel="preload" as="image" href={src} />
+        <link
+          key={'backgroundImagesPreload' + i}
+          rel="preload"
+          as="image"
+          href={src}
+          crossOrigin={'anonymous'}
+          type="image/webp"
+        />
       ))}
       {slideImages.map(({ src, srcSet, sizes }, i) => (
-        <link key={'slideImagesPreload' + i} rel="preload" as="image" href={src} imageSrcSet={srcSet} sizes={sizes} />
+        <link
+          key={'slideImagesPreload' + i}
+          rel="preload"
+          as="image"
+          href={src}
+          imageSrcSet={srcSet}
+          sizes={sizes}
+          crossOrigin={'anonymous'}
+          type="image/webp"
+        />
       ))} */}
     </Helmet>
     <React.StrictMode>
