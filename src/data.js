@@ -1,3 +1,13 @@
+import { FaInstagram } from '@react-icons/all-files/fa/FaInstagram';
+import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube';
+import { FaFacebook } from '@react-icons/all-files/fa/FaFacebook';
+import { FaFacebookF } from '@react-icons/all-files/fa/FaFacebookF';
+import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin';
+import { FaLinkedinIn } from '@react-icons/all-files/fa/FaLinkedinIn';
+import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
+/**
+ * Contains general data used across the application
+ */
 /**
  * Welcome page link
  */
@@ -37,26 +47,28 @@ const socialMedia = [
   {
     title: 'instagram',
     link: 'https://instagram.com/whatsonatssa/',
-    icon: 'FaInstagram',
+    Icon: FaInstagram,
+    AltIcon: null,
   },
   {
     title: 'youtube',
     link: 'https://www.youtube.com/channel/UCd2v8X2TCyQHA2Ww2EpfTXA',
-    icon: 'FaYoutube',
+    Icon: FaYoutube,
+    AltIcon: null,
   },
   {
     title: 'facebook',
     link: 'https://www.facebook.com/spitzerschoolofarchitecture',
-    icon: 'FaFacebookF',
-    altIcon: 'FaFacebook',
+    Icon: FaFacebookF,
+    AltIcon: FaFacebook,
   },
   {
     title: 'linkedin',
     link: 'https://www.linkedin.com/school/spitzer-school-of-architecture-city-college-of-new-york-cuny/',
-    icon: 'FaLinkedinIn',
-    altIcon: 'FaLinkedin',
+    Icon: FaLinkedinIn,
+    AltIcon: FaLinkedin,
   },
-  { title: 'twitter', link: 'https://twitter.com/whatsonatssa', icon: 'FaTwitter' },
+  { title: 'twitter', link: 'https://twitter.com/whatsonatssa', Icon: FaTwitter, AltIcon: null },
 ];
 
 /**

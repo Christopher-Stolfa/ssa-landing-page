@@ -1,6 +1,6 @@
 import styles from './nav-bar.module.css';
-import { FaBars } from 'react-icons/fa';
-import { AiOutlineClose } from 'react-icons/ai';
+import { FaBars } from '@react-icons/all-files/fa/FaBars';
+import { AiOutlineClose } from '@react-icons/all-files/ai/AiOutlineClose';
 import { useState, useEffect, useRef } from 'react';
 import MenuItem from './menu-item';
 import { menuOptions } from '../../../data';

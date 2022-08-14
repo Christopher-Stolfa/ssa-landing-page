@@ -18,7 +18,7 @@ const ccnyLogo2Src = process.env.PUBLIC_URL + '/images/ccny.svg';
 /**
  * cuny logo
  */
-const cunyLogoSrc = ''; // process.env.PUBLIC_URL + '/images/cuny.svg';
+const cunyLogoSrc = process.env.PUBLIC_URL + '/images/cuny.svg';
 /**
  * Digital tour thumbnail
  */

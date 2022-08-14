@@ -1,5 +1,6 @@
 import styles from './pagination.module.css';
-import { BsCircle, BsCircleFill } from 'react-icons/bs';
+import { BsCircleFill } from '@react-icons/all-files/bs/BsCircleFill';
+import { BsCircle } from '@react-icons/all-files/bs/BsCircle';
 /**
  * Pagination for the SlideShow
  * @param {*} props

@@ -1,8 +1,8 @@
 import styles from './arrow.module.css';
 import useTheme from '../../hooks/useTheme';
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md';
-import { IconContext } from 'react-icons';
-
+import { MdKeyboardArrowLeft } from '@react-icons/all-files/md/MdKeyboardArrowLeft';
+import { MdKeyboardArrowRight } from '@react-icons/all-files/md/MdKeyboardArrowRight';
+import { IconContext } from '@react-icons/all-files';
 /**
  * Arrow buttons for the SlideShow component
  * @param {*} props
