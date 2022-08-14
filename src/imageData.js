@@ -1,5 +1,5 @@
 /**
- * This path only uses wordpress path to image assets in production build.
+ * Contains image data used across the entire application
  */
 
 /**
