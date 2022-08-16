@@ -3,9 +3,6 @@ import useTheme from '../../hooks/useTheme';
 import DesktopHero from './desktop-hero';
 import MobileHero from './mobile-hero';
 import TabletHero from './tablet-hero';
-import GET_NEWS from '../../queries/get-news';
-import { useQuery } from '@apollo/client';
-import { useState, useEffect } from 'react';
 
 /**
  * Hero component

@@ -1,9 +1,8 @@
 import styles from './mobile-header.module.css';
 import Img from 'react-cool-img';
-import NavBar from '../navigation/nav-bar/nav-bar';
+import NavBar from '../navigation/nav-bar';
 import { ssaLink } from '../../data';
 import { ssaLogoSrc } from '../../imageData';
-import useTheme from '../../hooks/useTheme';
 
 /**
  * This header is used if the window width is less than 1024px

@@ -2,7 +2,7 @@ import styles from './top-menu.module.css';
 import Img from 'react-cool-img';
 import { ccnyLogoSrc } from '../../imageData';
 import { ccnyLink } from '../../data';
-// import SearchBar from './search-bar';
+import SearchBar from './search-bar';
 
 /**
  * The top menu that contains the small ssa logo
@@ -18,7 +18,7 @@ const TopMenu = () => {
           </a>
         </div>
       </div>
-      {/* <SearchBar /> */}
+      <SearchBar />
     </nav>
   );
 };

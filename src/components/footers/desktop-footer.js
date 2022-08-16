@@ -1,6 +1,6 @@
 import styles from './desktop-footer.module.css';
 import Img from 'react-cool-img';
-import GraySocialButton from '../buttons/gray-social-button/gray-social-button';
+import GraySocialButton from '../buttons/gray-social-button/';
 import { ccnyLink, cunyLink, socialMedia, ssaLink } from '../../data';
 import { ccnyLogo2Src, ccnyLogoSrc, cunyLogoSrc, ssaSmallLogoSrc } from '../../imageData';
 /**

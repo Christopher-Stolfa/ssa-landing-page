@@ -1,8 +1,7 @@
 import styles from './mobile-footer.module.css';
-import YellowSocialButton from '../buttons/yellow-social-button/yellow-social-button';
-import YellowButton from '../buttons/yellow-button/yellow-button';
-import NavLink from '../navigation/nav-link/nav-link';
-import { socialMedia, navLinks, subscribeLink } from '../../data';
+import YellowSocialButton from '../buttons/yellow-social-button/';
+import YellowButton from '../buttons/yellow-button/';
+import { socialMedia, subscribeLink } from '../../data';
 
 /**
  * The website footer component for mobile screen sizes
@@ -25,13 +24,6 @@ const MobileFooter = () => (
     >
       subscribe
     </YellowButton>
-    <ul className={styles.navLinks}>
-      {navLinks.map(({ title, link }, i) => (
-        <li key={`mobile-footer-nav-link-${i}`}>
-          <NavLink link={link}>{title}</NavLink>
-        </li>
-      ))}
-    </ul>
     <div id="google_translate_element"></div>
     <p className={styles.copywrite}>
       © {new Date().getFullYear()} The Bernard and Anne Spitzer School of Architecture. All rights reserved.

@@ -4,8 +4,8 @@ import { useState, useEffect } from 'react';
 import GET_NEWS from '../../queries/get-news';
 import { useQuery } from '@apollo/client';
 import formatNewsData from '../../lib/format-news-data';
-import NewsCard from '../../components/cards/news-card.js/news-card';
-import YellowButton from '../../components/buttons/yellow-button/yellow-button';
+import NewsCard from '../../components/cards/news-card.js/';
+import YellowButton from '../../components/buttons/yellow-button';
 
 const News = () => {
   const { loading, error, data } = useQuery(GET_NEWS);

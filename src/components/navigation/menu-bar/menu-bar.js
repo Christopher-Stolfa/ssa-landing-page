@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/client';
 import { menuOptions } from '../../../data';
 import GET_MENU from '../../../queries/get-menu';
 import formatMenuData from '../../../lib/format-menu-data';
-import { useEffect, memo } from 'react';
+import { useEffect } from 'react';
 
 /**
  * Menu bar component. Use the menu bar for screen widths above 1024px.
