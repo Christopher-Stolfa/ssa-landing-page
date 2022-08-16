@@ -33,15 +33,14 @@ const SlideShow = ({ slides = [] }) => {
       <Pagination current={current} slides={slides} selectSlide={selectSlide} />
       <div className={styles.viewport}>
         <div style={{ transform: `translate3d(-${current * 100}%, 0px, 0px)` }} className={styles.slideContainer}>
-          {slides.map(({ src, alt, fallbackSrc }, i) => (
+          {slides.map(({ src, alt }, i) => (
             <div key={`slideShowImage${i}`} className={styles.slide}>
               <div className={styles.slideInner}>
                 <picture className={styles.imageWrap}>
                   <source srcSet={src} type="image/webp" />
-                  <source srcSet={fallbackSrc} type="image/jpeg" />
                   <Img
                     alt={alt}
-                    src={fallbackSrc}
+                    src={src}
                     debounce={0}
                     style={{
                       position: 'absolute',
