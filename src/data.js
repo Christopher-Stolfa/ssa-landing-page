@@ -33,6 +33,10 @@ const subscribeLink = 'https://cuny.us4.list-manage.com/subscribe?u=21d6a2d10f89
  */
 const digitalTourVideo = 'https://www.youtube.com/watch?v=1do_gD8dIYs';
 /**
+ * Undergraduate portfolio link
+ */
+const baPortfolio = 'https://ssa.ccny.cuny.edu/portfolio/undergraduate-portfolio/b-arch-portfolio/';
+/**
  * SSA events calendar
  */
 const eventsLink = 'https://ssa.ccny.cuny.edu/events/';
@@ -396,4 +400,5 @@ export {
   eventsLink,
   calendarLink,
   offersData,
+  baPortfolio,
 };
