@@ -2,7 +2,7 @@ import styles from './mobile-hero.module.css';
 import utilStyles from '../../styles/utils.module.css';
 import SlideShow from '../slide-show/';
 import YellowButton from '../buttons/yellow-button/';
-import { welcomeLink } from '../../data';
+import { baPortfolio, welcomeLink } from '../../data';
 import { slideImages } from '../../imageData';
 
 /**
@@ -10,7 +10,7 @@ import { slideImages } from '../../imageData';
  */
 const MobileHero = () => (
   <section className={styles.container}>
-    <div className={styles.padding}>
+    <div className={styles.flexMargin}>
       <h1 className={utilStyles.headingMdLg}>
         <span className={styles.yellowText}>{"new york city's "}</span>
         <span>{'flagship public school for '}</span>
@@ -18,20 +18,19 @@ const MobileHero = () => (
       </h1>
     </div>
     <SlideShow slides={slideImages} />
-    <div className={styles.padding}>
+    <div className={styles.flexMargin}>
       <p className={styles.text}>
         {
           'Creating a just, sustainable, and imaginative future for a rapidly urbanizing planet through innovative research and interdisciplinary collaboration.'
         }
       </p>
-    </div>
-    <span className={styles.buttonWrap}>
       <YellowButton
         link={welcomeLink}
         text="learn more"
         label="learn more about the bernard and anne spitzer school of architecture"
       />
-    </span>
+      <YellowButton link={baPortfolio} text="view student work" label="view undergraduate student projects" invert />
+    </div>
   </section>
 );
 

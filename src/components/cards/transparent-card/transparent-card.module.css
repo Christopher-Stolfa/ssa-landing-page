@@ -1,7 +1,7 @@
 .container {
   color: #fff;
   box-sizing: border-box;
-  width: 100%;
+  width: 25rem;
   background: rgba(0, 0, 0, 0.58);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 4px;
@@ -40,8 +40,9 @@
   line-height: 16px;
 }
 
-@media screen and (min-width: 55rem) {
+/* For mobile device width */
+@media screen and (max-width: 35rem) {
   .container {
-    width: 25rem;
+    width: 100%;
   }
 }

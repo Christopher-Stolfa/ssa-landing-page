@@ -25,16 +25,16 @@ const Offers = () => {
           src={offersBackgroundSrc}
         />
       </div>
-      <h2 className={utilStyles.headingLg}>What We Offer</h2>
-      <ul className={styles.listWrapper}>
-        {offersData.map(({ row1, row2 }, i) => (
-          <li className={styles.row} key={`offers-row-${i}`}>
-            <TransparentCard title={row1.title} subTitle={row1.subTitle} />
-            {device !== deviceTypes.mobile && <TransparentCard title={row2.title} subTitle={row2.subTitle} />}
-          </li>
-        ))}
-      </ul>
-      <div className={styles.buttonWrap}>
+      <div className={styles.content}>
+        <h2 className={utilStyles.headingLg}>What We Offer</h2>
+        <ul className={styles.listWrapper}>
+          {offersData.map(({ row1, row2 }, i) => (
+            <li className={styles.row} key={`offers-row-${i}`}>
+              <TransparentCard title={row1.title} subTitle={row1.subTitle} />
+              {device !== deviceTypes.mobile && <TransparentCard title={row2.title} subTitle={row2.subTitle} />}
+            </li>
+          ))}
+        </ul>
         <YellowButton
           link={welcomeLink}
           text="learn more"

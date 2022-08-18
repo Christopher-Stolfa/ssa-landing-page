@@ -1,6 +1,6 @@
 import styles from './desktop-hero.module.css';
 import utilStyles from '../../styles/utils.module.css';
-import { socialMedia, subscribeLink, welcomeLink } from '../../data';
+import { baPortfolio, socialMedia, subscribeLink, welcomeLink } from '../../data';
 import YellowButton from '../buttons/yellow-button/';
 import YellowSocialButton from '../buttons/yellow-social-button/';
 import SlideShow from '../slide-show/';
@@ -28,6 +28,7 @@ const DesktopHero = () => (
         text="learn more"
         label="learn more about the bernard and anne spitzer school of architecture"
       />
+      <YellowButton link={baPortfolio} text="view student work" label="view undergraduate student projects" invert />
       <p className={utilStyles.lightText}>{"Want to know what's on at Spitzer?"}</p>
       <nav>
         <ul className={styles.socialMediaList}>
