@@ -1,4 +1,5 @@
-.wrapper {
+.wrapper,
+.wrapperInvert {
   border-style: none;
   border-radius: 0px;
   font-style: normal;
@@ -8,31 +9,45 @@
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
   text-indent: 0;
+  overflow: hidden;
 }
 
-.container {
+.wrapper:hover,
+.wrapperInvert:hover {
+  text-decoration: none;
+}
+
+.wrapperInvert {
+  color: #fecd08;
+}
+
+.container,
+.containerInvert {
   background-color: #fecd08;
-  display: inline-flex;
-  cursor: pointer;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  cursor: pointer;
   width: 18rem;
-  height: 2.5rem;
+  padding: 0.25rem;
   text-decoration: none;
   box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.25);
-
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
-.container:hover {
-  transform: scale(1.1, 1.1);
+.containerInvert {
+  background-color: #000;
+  border: 2px solid #fecd08;
+}
+
+.container:hover,
+.containerInvert:hover {
+  transform: scale(1.02, 1.02);
   text-decoration: none;
 }
 
-.container:active {
-  transform: scale(1.1, 1.1);
+/* For mobile device width */
+@media screen and (max-width: 35rem) {
+  .container,
+  .containerInvert {
+    width: 100%;
+  }
 }
