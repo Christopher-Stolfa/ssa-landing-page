@@ -83,19 +83,23 @@ const socialMedia = [
 /**
  * Data used for the offers section
  */
-const offersData = [
-  { title: '6 DEGREE PROGRAMS', subTitle: 'Bachelor of Architecture & Masters Programs' },
-  { title: '135,000 SQUARE FOOT BUILDING', subTitle: 'Studios, Wood Fabrication Shop, CAD Lab' },
-  { title: 'SOLAR ROOFPOD & URBAN FARM', subTitle: 'Spaces For Lectures And Gardening' },
-  { title: 'DEDICATED ARCHITECTURE LIBRARY', subTitle: 'Filled With 36,000 Volumes' },
-  { title: 'CENTRAL ATRIUM GALLERY', subTitle: 'Spaces For Lectures And Gardening' },
-  { title: 'RESEARCH CENTER', subTitle: 'A Center To Advance Broad Solutions That Empower People' },
-  { title: 'DISTINGUISHED FACULTY', subTitle: 'With 26 Full-Time Faculty and 40+ Adjunct Faculty' },
-  {
-    title: 'VISITING PROFESSORS AND GUEST LECTURERS',
-    subTitle: 'Provide A Unique Perspective On Several Matters',
-  },
-];
+const offersData = {
+  row1: [
+    { title: '6 DEGREE PROGRAMS', subTitle: 'Bachelor of Architecture & Masters Programs' },
+    { title: '135,000 SQUARE FOOT BUILDING', subTitle: 'Studios, Wood Fabrication Shop, CAD Lab' },
+    { title: 'SOLAR ROOFPOD & URBAN FARM', subTitle: 'Spaces For Lectures And Gardening' },
+    { title: 'DEDICATED ARCHITECTURE LIBRARY', subTitle: 'Filled With 36,000 Volumes' },
+  ],
+  row2: [
+    { title: 'CENTRAL ATRIUM GALLERY', subTitle: 'Spaces For Lectures And Gardening' },
+    { title: 'RESEARCH CENTER', subTitle: 'A Center To Advance Broad Solutions That Empower People' },
+    { title: 'DISTINGUISHED FACULTY', subTitle: 'With 26 Full-Time Faculty and 40+ Adjunct Faculty' },
+    {
+      title: 'VISITING PROFESSORS AND GUEST LECTURERS',
+      subTitle: 'Provide A Unique Perspective On Several Matters',
+    },
+  ],
+};
 
 /**
  * Navigation link data

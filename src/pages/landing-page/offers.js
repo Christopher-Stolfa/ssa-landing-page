@@ -10,7 +10,10 @@ import { offersBackgroundSrc } from '../../imageData';
 import { useEffect } from 'react';
 
 const Offers = () => {
-  const { device, deviceTypes } = useTheme();
+  const {
+    device,
+    deviceTypes: { mobile },
+  } = useTheme();
 
   useEffect(() => {
     console.log('rendered offers');
@@ -27,11 +30,21 @@ const Offers = () => {
       </div>
       <div className={styles.content}>
         <h2 className={utilStyles.headingLg}>What We Offer</h2>
-        <ul className={styles.listWrapper}>
-          {offersData.map(({ title, subTitle }, i) => (
-            <TransparentCard title={title} subTitle={subTitle} key={`offers${i}`} />
-          ))}
-        </ul>
+        <div className={styles.flexContainer}>
+          <ul className={styles.listWrapper}>
+            {offersData.row1.map(({ title, subTitle }, i) => (
+              <TransparentCard title={title} subTitle={subTitle} key={`offersRow1${i}`} />
+            ))}
+          </ul>
+          {device !== mobile && (
+            <ul className={styles.listWrapper}>
+              {offersData.row2.map(({ title, subTitle }, i) => (
+                <TransparentCard title={title} subTitle={subTitle} key={`offersRow2${i}`} />
+              ))}
+            </ul>
+          )}
+        </div>
+
         <YellowButton
           link={ourBuildingLink}
           text="learn more"
