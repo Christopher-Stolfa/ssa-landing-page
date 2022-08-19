@@ -13,6 +13,11 @@ import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter';
  */
 const welcomeLink = 'https://ssa.ccny.cuny.edu/about/welcome/';
 /**
+ * A link to a web page to learn more about the SSA campus
+ */
+const ourBuildingLink = 'https://ssa.ccny.cuny.edu/resources/creative-spaces/our-building/';
+/**
+ *
  * Link to SSA home page
  */
 const ssaLink = 'https://ssa.ccny.cuny.edu/';
@@ -79,24 +84,16 @@ const socialMedia = [
  * Data used for the offers section
  */
 const offersData = [
+  { title: '6 DEGREE PROGRAMS', subTitle: 'Bachelor of Architecture & Masters Programs' },
+  { title: '135,000 SQUARE FOOT BUILDING', subTitle: 'Studios, Wood Fabrication Shop, CAD Lab' },
+  { title: 'SOLAR ROOFPOD & URBAN FARM', subTitle: 'Spaces For Lectures And Gardening' },
+  { title: 'DEDICATED ARCHITECTURE LIBRARY', subTitle: 'Filled With 36,000 Volumes' },
+  { title: 'CENTRAL ATRIUM GALLERY', subTitle: 'Spaces For Lectures And Gardening' },
+  { title: 'RESEARCH CENTER', subTitle: 'A Center To Advance Broad Solutions That Empower People' },
+  { title: 'DISTINGUISHED FACULTY', subTitle: 'With 26 Full-Time Faculty and 40+ Adjunct Faculty' },
   {
-    row1: { title: '6 DEGREE PROGRAMS', subTitle: 'Bachelor of Architecture & Masters Programs' },
-    row2: { title: 'CENTRAL ATRIUM GALLERY', subTitle: 'Spaces For Lectures And Gardening' },
-  },
-  {
-    row1: { title: '135,000 SQUARE FOOT BUILDING', subTitle: 'Studios, Wood Fabrication Shop, CAD Lab' },
-    row2: { title: 'RESEARCH CENTER', subTitle: 'A Center To Advance Broad Solutions That Empower People' },
-  },
-  {
-    row1: { title: 'SOLAR ROOFPOD & URBAN FARM', subTitle: 'Spaces For Lectures And Gardening' },
-    row2: { title: 'DISTINGUISHED FACULTY', subTitle: 'With 26 Full-Time Faculty and 40+ Adjunct Faculty' },
-  },
-  {
-    row1: { title: 'DEDICATED ARCHITECTURE LIBRARY', subTitle: 'Filled With 36,000 Volumes' },
-    row2: {
-      title: 'VISITING PROFESSORS AND GUEST LECTURERS',
-      subTitle: 'Provide A Unique Perspective On Several Matters',
-    },
+    title: 'VISITING PROFESSORS AND GUEST LECTURERS',
+    subTitle: 'Provide A Unique Perspective On Several Matters',
   },
 ];
 
@@ -401,4 +398,5 @@ export {
   calendarLink,
   offersData,
   baPortfolio,
+  ourBuildingLink,
 };
