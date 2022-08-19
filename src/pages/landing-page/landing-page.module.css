@@ -9,17 +9,3 @@
 .flexBackground {
   background-color: #f6f6f6;
 }
-
-.flex {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 1rem;
-  margin: 1rem 0 1rem auto;
-}
-
-@media screen and (min-width: 58rem) {
-  .flex {
-    flex-direction: row;
-  }
-}
