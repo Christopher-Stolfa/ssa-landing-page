@@ -9,22 +9,18 @@ import utilStyles from '../../../styles/utils.module.css';
  * @param {String} link - Link to the news article page
  * @param {String} excerpt - Brief excerpt of the article contents
  */
-const NewsCard = ({ date, title, link, excerpt }) => {
-  const dateObj = new Date(date);
-  const dateStr = `${dateObj.getMonth()}. ${dateObj.getDate()}. ${dateObj.getFullYear()}`;
-  return (
-    <li className={styles.container}>
-      <a href={link} className={styles.anchor}>
-        <article className={styles.flexBox}>
-          <span className={utilStyles.articleDate}>{dateStr}</span>
-          <h3 className={styles.title}>{title}</h3>
-          <span className={styles.excerptWrapper}>
-            <p className={styles.excerpt}>{excerpt}</p>
-          </span>
-        </article>
-      </a>
-    </li>
-  );
-};
+const NewsCard = ({ date, title, link, excerpt }) => (
+  <li className={styles.container}>
+    <a href={link} className={styles.anchor}>
+      <article className={styles.flexBox}>
+        <span className={utilStyles.articleDate}>{date}</span>
+        <h3 className={styles.title}>{title}</h3>
+        <span className={styles.excerptWrapper}>
+          <p className={styles.excerpt}>{excerpt}</p>
+        </span>
+      </article>
+    </a>
+  </li>
+);
 
 export default NewsCard;

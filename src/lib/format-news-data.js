@@ -12,9 +12,15 @@ const formatNewsData = (data) => {
     newString = newString.replace(stripEntities, '');
     return newString;
   };
+
+  const formatDate = (date) => {
+    const dateObj = new Date(date);
+    return `${dateObj.getMonth() + 1}. ${dateObj.getDate()}. ${dateObj.getFullYear()}`;
+  };
+
   return edges.map(({ node: { title, date, link, excerpt } }) => ({
     title,
-    date,
+    date: formatDate(date),
     link,
     excerpt: excerpt ? excerptRegex(excerpt) : '',
   }));
