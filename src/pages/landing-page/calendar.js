@@ -24,9 +24,6 @@ const Events = () => {
             Events
           </h2>
           <div className={styles.eventsContainer}>
-            <h3 style={{ borderBottom: '1px solid #ccc' }} className={utilStyles.headingSm}>
-              Calendar
-            </h3>
             <ul className={styles.calendarCards}>
               {events.map((data, i) => (
                 <CalendarCard {...data} key={'calendarItem' + i} />

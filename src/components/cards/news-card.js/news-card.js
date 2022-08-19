@@ -1,4 +1,5 @@
 import styles from './news-card.module.css';
+import utilStyles from '../../../styles/utils.module.css';
 
 /**
  * Calendar Card component used by the Calendar component
@@ -15,7 +16,7 @@ const NewsCard = ({ date, title, link, excerpt }) => {
     <li className={styles.container}>
       <a href={link} className={styles.anchor}>
         <article className={styles.flexBox}>
-          <span className={styles.date}>{dateStr}</span>
+          <span className={utilStyles.articleDate}>{dateStr}</span>
           <h3 className={styles.title}>{title}</h3>
           <span className={styles.excerptWrapper}>
             <p className={styles.excerpt}>{excerpt}</p>

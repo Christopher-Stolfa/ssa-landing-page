@@ -1,4 +1,5 @@
 import styles from './calendar-card.module.css';
+import utilStyles from '../../../styles/utils.module.css';
 
 /**
  * Calendar Card component used by the Calendar component
@@ -9,7 +10,7 @@ import styles from './calendar-card.module.css';
  */
 const CalendarCard = ({ title = '', link = '', eventDuration = '' }) => (
   <li className={styles.container}>
-    <span className={styles.eventDate}>{eventDuration}</span>
+    <span className={utilStyles.articleDate}>{eventDuration}</span>
     <a className={styles.anchor} href={link}>
       <h3>{title}</h3>
     </a>
