@@ -1,5 +1,4 @@
 import styles from './landing-page.module.css';
-import utilStyles from '../../styles/utils.module.css';
 import Header from '../../components/headers/header';
 import Hero from '../../components/hero/hero';
 import Offers from './offers';
@@ -26,7 +25,7 @@ const LandingPage = () => {
         <Hero />
         <Offers />
         <div className={styles.flexBackground}>
-          <div className={utilStyles.flexContainer}>
+          <div className={styles.flexContainer}>
             <News />
             <Calendar />
           </div>
