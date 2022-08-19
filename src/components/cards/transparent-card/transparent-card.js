@@ -7,9 +7,9 @@ import styles from './transparent-card.module.css';
  * @returns
  */
 const TransparentCard = ({ title = '', subTitle = '' }) => (
-  <div className={styles.container}>
+  <li className={styles.container}>
     <h3 className={styles.title}>{title}</h3>
     <p className={styles.subTitle}>{subTitle}</p>
-  </div>
+  </li>
 );
 export default TransparentCard;
