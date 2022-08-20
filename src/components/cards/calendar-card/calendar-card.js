@@ -8,9 +8,9 @@ import utilStyles from '../../../styles/utils.module.css';
  * @param {String} link - Link to the event page
  * @param {String} eventDuration - The event date or duration between two dates.
  */
-const CalendarCard = ({ title = '', link = '', eventDuration = '' }) => (
+const CalendarCard = ({ title = '', link = '', date = '' }) => (
   <li className={styles.container}>
-    <span className={utilStyles.articleDate}>{eventDuration}</span>
+    <span className={utilStyles.articleDate}>{date}</span>
     <a className={styles.anchor} href={link}>
       <h3>{title}</h3>
     </a>

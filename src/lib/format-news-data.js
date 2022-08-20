@@ -15,7 +15,10 @@ const formatNewsData = (data) => {
 
   const formatDate = (date) => {
     const dateObj = new Date(date);
-    return `${dateObj.getMonth() + 1}. ${dateObj.getDate()}. ${dateObj.getFullYear()}`;
+    const dateMDY = `${dateObj.toLocaleString('default', {
+      month: 'short',
+    })} ${dateObj.getUTCDate()}, ${dateObj.getUTCFullYear()}`;
+    return dateMDY;
   };
 
   return edges.map(({ node: { title, date, link, excerpt } }) => ({
