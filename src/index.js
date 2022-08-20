@@ -1,14 +1,14 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 import 'intersection-observer';
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './app';
 import { ApolloClient, InMemoryCache, ApolloProvider, ApolloLink, HttpLink } from '@apollo/client';
 import { RetryLink } from '@apollo/client/link/retry';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from './context/ThemeContext';
-import { backgroundImages, slideImages } from './imageData';
+
+const App = React.lazy(() => import('./app'));
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -57,33 +57,13 @@ root.render(
         rel="stylesheet"
         type="text/css"
       />
-      {/* {backgroundImages.map(({ src }, i) => (
-        <link
-          key={'backgroundImagesPreload' + i}
-          rel="preload"
-          as="image"
-          href={src}
-          crossOrigin={'anonymous'}
-          type="image/webp"
-        />
-      ))}
-      {slideImages.map(({ src, srcSet, sizes }, i) => (
-        <link
-          key={'slideImagesPreload' + i}
-          rel="preload"
-          as="image"
-          href={src}
-          imageSrcSet={srcSet}
-          sizes={sizes}
-          crossOrigin={'anonymous'}
-          type="image/webp"
-        />
-      ))} */}
     </Helmet>
     <React.StrictMode>
       <ApolloProvider client={client}>
         <ThemeProvider>
-          <App />
+          <Suspense fallback={<div>...loading</div>}>
+            <App />
+          </Suspense>
         </ThemeProvider>
       </ApolloProvider>
     </React.StrictMode>
