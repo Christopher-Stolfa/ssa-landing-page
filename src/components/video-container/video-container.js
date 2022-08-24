@@ -5,8 +5,9 @@ import utilStyles from '../../styles/utils.module.css';
 import useTheme from '../../hooks/useTheme';
 import Img from 'react-cool-img';
 import { digitourSrc } from '../../imageData';
+import { digitalTourVideo } from '../../data';
 
-const VideoContainer = ({ url = '' }) => {
+const VideoContainer = () => {
   const {
     dimensions: { width },
   } = useTheme();
@@ -21,26 +22,19 @@ const VideoContainer = ({ url = '' }) => {
         {toggle ? (
           <ReactPlayer
             width={width < 640 ? width : 640}
-            url={url}
+            url={digitalTourVideo}
             playing={false}
             controls
             volume={1}
             muted={true}
-            // config={{
-            //   file: {
-            //     attributes: {
-            //       controlsList: 'nodownload',
-            //     },
-            //   },
-            // }}
           />
         ) : (
           <div className={styles.cover}>
             <Img
               style={{
                 position: 'relative',
-                width: '100%',
-                height: '100%',
+                width: '640px',
+                height: '360px',
                 backgroundSize: 'cover',
                 backgroundColor: '#000',
                 objectFit: 'cover',

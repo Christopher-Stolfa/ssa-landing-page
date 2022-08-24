@@ -1,41 +1,33 @@
 import styles from './landing-page.module.css';
-import Header from '../../components/headers/header';
-import Hero from '../../components/hero/hero';
-import Offers from './offers';
-import useTheme from '../../hooks/useTheme';
-import VideoContainer from '../../components/video-container/video-container';
-import { digitalTourVideo } from '../../data';
-import Footer from '../../components/footers/footer';
-import SkipLinks from '../../components/skip-links/skip-links';
-import News from './news';
-import Calendar from './calendar';
+import { lazy, Suspense, useEffect } from 'react';
+import SkipLinks from '../../components/skip-links';
 
-const LandingPage = () => {
-  const {
-    device,
-    deviceTypes: { desktop },
-  } = useTheme();
+const Header = lazy(() => import('../../components/headers/'));
+const Hero = lazy(() => import('../../components/hero/'));
+const Offers = lazy(() => import('./offers'));
+const News = lazy(() => import('./news'));
+const Calendar = lazy(() => import('./calendar'));
+const VideoContainer = lazy(() => import('../../components/video-container'));
+const Footer = lazy(() => import('../../components/footers/'));
 
-  return (
-    <>
-      <SkipLinks />
-      <Header />
-      <main id="main-content" className={styles.container}>
-        {device !== desktop && <div style={{ height: '3.5rem' }} />}
-        <Hero />
-        <Offers />
-        <div className={styles.flexBackground}>
-          <div className={styles.flexContainer}>
-            <News />
-            <Calendar />
-          </div>
+const LandingPage = () => (
+  <>
+    <SkipLinks />
+    <Header />
+    <main id="main-content" className={styles.container}>
+      <div className={styles.pad} />
+      <Hero />
+      <Offers />
+      <div className={styles.flexBackground}>
+        <div className={styles.flexContainer}>
+          <News />
+          <Calendar />
         </div>
+      </div>
 
-        <VideoContainer url={digitalTourVideo} />
-      </main>
-      <Footer />
-    </>
-  );
-};
-
+      <VideoContainer />
+    </main>
+    <Footer />
+  </>
+);
 export default LandingPage;
