@@ -9,37 +9,30 @@ import { calendarLink, eventsLink } from '../../data';
 const Events = () => {
   const { loading, error, data } = useQuery(GET_EVENTS);
 
-  if (loading) {
-    console.log('loading');
-  }
-  if (error) {
-    console.log(error);
-  }
-  if (data) {
-    const events = formatEventsData(data);
-    return (
-      <section>
-        <div className={styles.calendarContainer}>
-          <h2 className={utilStyles.headingLg} style={{ color: '#000', textShadow: 'none' }}>
-            Events
-          </h2>
-          <div className={styles.eventsContainer}>
-            <ul className={styles.calendarCards}>
-              {events.map((data, i) => (
-                <CalendarCard {...data} key={'calendarItem' + i} />
-              ))}
-            </ul>
-            <a className={styles.link} href={eventsLink}>
-              VIEW FULL CALENDAR
-            </a>
-          </div>
-          <a className={styles.link} href={calendarLink}>
-            Academic Calendar
+  return (
+    <section>
+      <div className={styles.calendarContainer}>
+        <h2 className={utilStyles.headingLg} style={{ color: '#000', textShadow: 'none' }}>
+          Events
+        </h2>
+        <div className={styles.eventsContainer}>
+          <ul className={styles.calendarCards}>
+            {data
+              ? formatEventsData(data).map((data, i) => <CalendarCard {...data} key={`calendarItem${i}`} />)
+              : new Array(5)
+                  .fill(null)
+                  .map((u, i) => <CalendarCard key={`newsSkeletonCard${i}`} loading={loading} error={error} />)}
+          </ul>
+          <a className={styles.link} href={eventsLink}>
+            VIEW FULL CALENDAR
           </a>
         </div>
-      </section>
-    );
-  }
+        <a className={styles.link} href={calendarLink}>
+          Academic Calendar
+        </a>
+      </div>
+    </section>
+  );
 
   return <div> </div>;
 };

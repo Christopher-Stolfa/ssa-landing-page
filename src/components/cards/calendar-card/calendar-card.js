@@ -1,5 +1,7 @@
 import styles from './calendar-card.module.css';
 import utilStyles from '../../../styles/utils.module.css';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 /**
  * Calendar Card component used by the Calendar component
@@ -8,11 +10,11 @@ import utilStyles from '../../../styles/utils.module.css';
  * @param {String} link - Link to the event page
  * @param {String} eventDuration - The event date or duration between two dates.
  */
-const CalendarCard = ({ title = '', link = '', date = '' }) => (
+const CalendarCard = ({ title = '', link = '', date = '', loading = false, error = null }) => (
   <li className={styles.container}>
-    <span className={utilStyles.articleDate}>{date}</span>
+    <span className={utilStyles.articleDate}>{loading || error ? <Skeleton /> : date}</span>
     <a className={styles.anchor} href={link}>
-      <h3>{title}</h3>
+      <h3>{loading || error ? <Skeleton /> : title}</h3>
     </a>
   </li>
 );
