@@ -3,7 +3,6 @@ import utilStyles from '../../styles/utils.module.css';
 import SlideShow from '../slide-show/';
 import YellowButton from '../buttons/yellow-button/';
 import { baPortfolio, welcomeLink } from '../../data';
-import { slideImages } from '../../imageData';
 
 /**
  * Hero component for mobile window dimensions
@@ -17,7 +16,7 @@ const MobileHero = () => (
         <span className={styles.yellowText}>{'architecture'}</span>
       </h1>
     </div>
-    <SlideShow slides={slideImages} />
+    <SlideShow />
     <div className={styles.flexMargin}>
       <p className={styles.text}>
         {
