@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import ErrorPage from './error-page';
 
 class ErrorBoundary extends Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       // You can render any custom fallback UI
-      return <h1>Something went wrong.</h1>;
+      return <ErrorPage />;
     }
 
     return this.props.children;
