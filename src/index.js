@@ -1,14 +1,12 @@
-import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
-import 'intersection-observer';
-import React, { Suspense } from 'react';
+import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import { ApolloClient, InMemoryCache, ApolloProvider, ApolloLink, HttpLink } from '@apollo/client';
 import { RetryLink } from '@apollo/client/link/retry';
 import { Helmet } from 'react-helmet';
 import { ThemeProvider } from './context/ThemeContext';
-
-const App = React.lazy(() => import('./app'));
+import ErrorBoundary from './components/error/error-boundary';
+import App from './app';
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
@@ -51,21 +49,20 @@ root.render(
         property="og:description"
         content="The Bernard and Anne Spitzer School of Architecture, New York City's flagship public school for architecture."
       />
-      <meta name="author" content="Christopher Stolfa" />
       <link
         href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Roboto+Condensed:400,700&display=swap"
         rel="stylesheet"
         type="text/css"
       />
     </Helmet>
-    <React.StrictMode>
-      <ApolloProvider client={client}>
-        <ThemeProvider>
-          <Suspense fallback={<div>...loading</div>}>
+    <StrictMode>
+      <ErrorBoundary>
+        <ApolloProvider client={client}>
+          <ThemeProvider>
             <App />
-          </Suspense>
-        </ThemeProvider>
-      </ApolloProvider>
-    </React.StrictMode>
+          </ThemeProvider>
+        </ApolloProvider>
+      </ErrorBoundary>
+    </StrictMode>
   </>,
 );
