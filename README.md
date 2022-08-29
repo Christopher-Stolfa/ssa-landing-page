@@ -18,10 +18,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/Christopher-Stolfa/Spitzer-Project">
-    <img src="images/logo.png" alt="The Bernard and Anne Spitzer School of Architecture">
-  </a>
-
 <h3 align="center">The Bernard and Anne Spitzer School of Architecture</h3>
 
   <p align="center">
@@ -74,56 +70,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
-
-## Getting Started
-
-To get a local copy of this application up and running follow these steps.
-
-### Prerequisites
-
-Prequisite software and how to install.
-
-First make sure you have the latest versions of
-
-- Node.js - [Download Node.js](https://nodejs.org/en/download/)
-- npm - `sh npm install npm@latest -g ## Install latest version of npm`
-- yarn - `npm install yarn -g ## Install yarn package manager which will be used in the Spitzer-Project repository.`
-
-### Installation
-
-1. Make sure you have the latest versions of git, yarn, node, and npm installed.
-
-2. Clone the repo `git clone https://github.com/Christopher-Stolfa/Spitzer-Project.git`
-
-3. Open a command line inside the root directory.
-
-4. Install Yarn packages used by this application.
-
-   ```
-   yarn install
-   ```
-
-5. Make a file in the root directory called `.env` and add the following.
-
-   ```
-   NODE_ENV: development ## or production
-   ```
-
-6. To run this application on a local server with hot reload, open a command line and run:
-
-   ```
-   yarn start
-   ```
-
-7. To create an optimized build of the application, open a command line and run:
-
-   ```
-   yarn build
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 <!-- USAGE EXAMPLES -->
 
 ## Usage
@@ -150,7 +96,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Christopher Stolfa - [@linkedin](https://www.linkedin.com/in/christopher-stolfa-49a4a0178) - xcstolfax@gmail.com
 
-Project Link: [https://github.com/Christopher-Stolfa/Spitzer-Project](https://github.com/Christopher-Stolfa/Spitzer-Project)
+Project Link: [https://github.com/Christopher-Stolfa/ssa-landing-page](https://github.com/Christopher-Stolfa/ssa-landing-page)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
