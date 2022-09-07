@@ -6,7 +6,10 @@ import GET_EVENTS from '../../queries/get-events';
 import CalendarCard from '../../components/cards/calendar-card';
 import { calendarLink, eventsLink } from '../../data';
 
-const Events = () => {
+/**
+ * Shows a box with a list of upcoming events
+ */
+const Calendar = () => {
   const { loading, error, data } = useQuery(GET_EVENTS);
 
   return (
@@ -33,8 +36,6 @@ const Events = () => {
       </div>
     </section>
   );
-
-  return <div> </div>;
 };
 
-export default Events;
+export default Calendar;
